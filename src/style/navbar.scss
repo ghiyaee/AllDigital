@@ -1,0 +1,194 @@
+@import "./variable/variable.scss";
+* {
+  margin: $magrinBody;
+  padding: $padingBody;
+  box-sizing: border-box;
+}
+html {
+ font-size: 62.5%; 
+}
+.navbar {
+  width: 100%;
+  height: 100px;
+  background: $background;
+  display: $dsFlex;
+  justify-content: flex-end;
+  align-items: center;
+  h1 {
+    font-family: $font-logo;
+    color: $bkcolor;
+  }
+  a {
+    color: $color;
+    text-decoration: none;
+    font-size: $font;
+    margin: $margin;
+    padding: 3.2rem;
+    border-bottom: $boderbottom;
+    transition: $trans;
+  }
+  a:hover {
+    color: $bkcolor;
+    border-bottom: $boderbottomline;
+  }
+  a:active {
+    background: rgba(173, 173, 172, 0.7);
+    border-bottom: $boderbottomline;
+    animation-name: animi;
+    animation-duration: 4s;
+    border-radius: 10px;
+  }
+  @keyframes animi {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .logo {
+    flex-grow: 1;
+    margin: $marginLogo;
+    font-size: $font;
+    color: $color;
+    display: $dsFlex;
+    align-items: center;
+  }
+  .logo h1 {
+    margin: $margin;
+  }
+  .btn-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background: none; 
+  }
+  .btn-menu i {
+   margin-right: 4rem;
+   font-size: 2rem;
+   color:$bkcolor
+}
+  .closeMenu {
+    display: $displayNone;
+  }
+  .openMenu {
+    display: block;
+  }
+}
+.sidebarLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 190px;
+  height: 100vh;
+  padding: 3rem;
+  background: $background;
+  transition: all 0.9s;
+  z-index: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  h2 {
+    color: $bkcolor;
+    font-family: $font-logo;
+  }
+}
+.Sidehiden {
+  transform: translateX(-1000px);
+}
+.SidehidenShow {
+  transform: translateX(0px);
+}
+.sidebarLeft ul {
+  list-style: none;
+  color: $color;
+}
+
+.list {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul li{
+   font-size: $font;
+   color: $bkcolor;
+   cursor: pointer;
+}
+.actv {
+  display: none;
+}
+.show {
+  display: block;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background-color: $background;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(250, 46, 46);
+}
+.sidebarLeft .list {
+  font-size: $font;
+  margin: 2rem auto;
+}
+@media (max-width: 1343px) {
+  .navbar {
+    height: 66px;
+  }
+  .logo h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+  .navbar a {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar {
+    height: 48px;
+  }
+  .logo h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+  .navbar a {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 817px) {
+  .navbar {
+    height: 40px;
+  }
+  .navbar a {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+  }
+}
+@media (max-width: 770px) {
+  .openMenu {
+    display: $displayShow;
+  }
+  .navbar a {
+    display: $displayNone;
+  }
+  .logo h1,
+  i {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .btn-menu {
+    display: $displayNone;
+  }
+  .sidebarLeft {
+    transform: translateX(-1000px);
+  }
+}
