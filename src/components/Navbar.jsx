@@ -33,7 +33,7 @@ const Nabnar = () => {
           <a href="#">Flash Memory</a>
           <a href="#">Hdd</a>
           <a href="#">Sdd</a>
-          <a href="#">Sign Up</a>
+        
         </div>
         <button className="btn-menu">
           <div>

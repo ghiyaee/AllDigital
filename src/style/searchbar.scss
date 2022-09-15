@@ -1,0 +1,44 @@
+@import "./variable/variable.scss";
+* {
+  margin: $magrinBody;
+  padding: $padingBody;
+}
+.searchbar {
+  display: $dsFlex;
+  width: 100%;
+  align-items: center;
+  border: 3px solid rgb(243, 241, 241);
+  .form{
+    flex: 4;
+    margin: 1rem;
+  }
+  .input-search {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: rgb(224, 222, 222);
+    // margin: 1rem;
+    border-radius: 7px;
+    outline: none;
+    font-size: $font;
+  }
+  .sign-buy {
+    padding: .5rem;
+    font-size: $font;
+    margin: 1rem;
+    border: 3px solid rgb(243, 241, 241);
+    border-radius: 7px;
+  }
+  .sign-buy a {
+    text-decoration: none;
+  }
+  .sign-buy i {
+    margin-left: 2rem;
+  }
+  @media (max-width: 600px) {
+    .input-search,.sign-buy{
+        font-size: 1.2rem;
+    }
+    
+  }
+}
