@@ -31,7 +31,7 @@ html {
     animation-name: animi;
     animation-duration: 1s;
     border-radius: 10px;
-    background: rgb(17, 68, 146);
+    background: rgb(47, 90, 155);
     color: $bkcolor;
   }
   
@@ -83,14 +83,15 @@ html {
   height: 100vh;
   padding: 3rem;
   background: $background;
-  transition: all 0.9s;
   z-index: 0;
   overflow-y: scroll;
   overflow-x: hidden;
+  transition: all .6s ease-in-out;
   h2 {
     color: $bkcolor;
     font-family: $font-logo;
   }
+
 }
 .Sidehiden {
   transform: translateX(-1000px);
@@ -102,6 +103,7 @@ html {
   list-style: none;
   color: $color;
 }
+
 
 .list {
   cursor: pointer;
