@@ -5,14 +5,13 @@
   box-sizing: border-box;
 }
 html {
- font-size: 62.5%; 
+  font-size: 62.5%;
 }
 .navbar {
   width: 100%;
   height: 100px;
   background: $background;
   display: $dsFlex;
-  justify-content: flex-end;
   align-items: center;
   h1 {
     font-family: $font-logo;
@@ -22,35 +21,33 @@ html {
     color: $color;
     text-decoration: none;
     font-size: $font;
-    margin: $margin;
-    padding: 3.2rem;
+    margin: 1rem;
+    padding: 3.2rem 0.5rem;
     border-bottom: $boderbottom;
     transition: $trans;
+    height: 100px;
   }
   a:hover {
-    color: $bkcolor;
-    border-bottom: $boderbottomline;
-  }
-  a:active {
-    background: rgba(173, 173, 172, 0.7);
-    border-bottom: $boderbottomline;
     animation-name: animi;
-    animation-duration: 4s;
+    animation-duration: 1s;
     border-radius: 10px;
+    background: rgb(17, 68, 146);
+    color: $bkcolor;
   }
+  
   @keyframes animi {
     from {
-      opacity: 1;
+      opacity: 0;
     }
     to {
-      opacity: 0;
+      opacity: 1;
     }
   }
 
   .logo {
-    flex-grow: 1;
-    margin: $marginLogo;
-    font-size: $font;
+    flex: 1;
+    margin: 0.5rem;
+    font-size: 1.2rem;
     color: $color;
     display: $dsFlex;
     align-items: center;
@@ -58,19 +55,19 @@ html {
   .logo h1 {
     margin: $margin;
   }
-  .btn-menu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  cursor: pointer;
-  background: none; 
+  .btn-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background: none;
   }
   .btn-menu i {
-   margin-right: 4rem;
-   font-size: 2rem;
-   color:$bkcolor
-}
+    margin-right: 4rem;
+    font-size: 2rem;
+    color: $bkcolor;
+  }
   .closeMenu {
     display: $displayNone;
   }
@@ -113,10 +110,10 @@ html {
   align-items: center;
 }
 
-.ul li{
-   font-size: $font;
-   color: $bkcolor;
-   cursor: pointer;
+.ul li {
+  font-size: $font;
+  color: $bkcolor;
+  cursor: pointer;
 }
 .actv {
   display: none;
@@ -137,51 +134,16 @@ html {
   font-size: $font;
   margin: 2rem auto;
 }
-@media (max-width: 1343px) {
-  .navbar {
-    height: 66px;
-  }
-  .logo h1 {
-    font-size: 2rem;
-    margin: 0.5rem;
-  }
-  .navbar a {
-    font-size: 2.5rem;
-    padding: 1.5rem;
-  }
-}
-@media (max-width: 1024px) {
-  .navbar {
-    height: 48px;
-  }
-  .logo h1 {
-    font-size: 2rem;
-    margin: 0.5rem;
-  }
-  .navbar a {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-}
-@media (max-width: 817px) {
-  .navbar {
-    height: 40px;
-  }
-  .navbar a {
-    font-size: 1.5rem;
-    padding: 0.7rem;
-  }
-}
 @media (max-width: 770px) {
   .openMenu {
     display: $displayShow;
   }
-  .navbar a  {
+  .navbar a {
     display: $displayNone;
   }
   .logo h1,
   i {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 }
 @media (min-width: 768px) {
