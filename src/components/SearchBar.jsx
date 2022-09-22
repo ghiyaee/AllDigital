@@ -14,7 +14,7 @@ const SearchBar = () => {
         </div>
         <div className="sign-buy">
           <a href="#">Sign Up / Login</a>
-          <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+          <i className="fa-sharp fa-solid fa-cart-shopping"></i>
         </div>
       </div>
     </>

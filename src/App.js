@@ -1,12 +1,18 @@
+import {PerProvider } from '../src/context';
 import Nabnar from './components/Navbar';
 import SearchBar from './components/SearchBar';
+
 import './style/app.scss'
  const App = () => { 
-  return (
+   return (
+   <PerProvider>
     <div className="App">
       <Nabnar />
       <SearchBar/>
-    </div>
-  );
+    </div> 
+   </PerProvider>
+    
+
+  )
 }
 export default  App;
