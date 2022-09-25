@@ -1,4 +1,15 @@
-import { createContext ,useReducer} from "react";
+import { createContext, useReducer } from "react";
+import img1 from "../imgs/img-4.jpg"
+import img2 from "../imgs/labtab1.png"
+import img3 from "../imgs/flash.jpg"
+import img4 from "../imgs/hdd.jpg"
+import img5 from "../imgs/sdd.png"
+import img1_slider from "../img/img-1.jpg"
+import img2_slider from "../img/img-2.jpg"
+import img3_slider from "../img/img-3.jpg"
+import img4_slider from "../img/img-4.jpg"
+
+
 const Context = createContext();
 const initail = {
     sidebar: 'Sidehiden',
@@ -8,7 +19,10 @@ const initail = {
     showLabtab: 'actv',
     showFlash: 'actv',
     showHdd: 'actv',
-    showSdd:'actv'
+    showSdd: 'actv',
+    imgs: [img1, img2, img3, img4, img5],
+    imgSlider: [img1_slider, img2_slider, img3_slider, img4_slider],
+    counter: 0
 }
 const reducer = (state, action) => { 
     switch (action) {
@@ -72,7 +86,17 @@ const reducer = (state, action) => {
          return {
              ...state,
              showSdd : state.showSdd  = "actv"
-         }
+            }
+          case 'GoToNext':
+          return {
+              ...state,
+              counter: state.counter < state.imgSlider.length - 1 ? state.counter + 1 : state.counter = 0
+          }
+          case 'GoToPerv':
+          return {
+              ...state,
+              counter: state.counter > 0 ? state.counter - 1 : state.counter = state.imgSlider.length - 1
+          }
         default:
             return state
     }
