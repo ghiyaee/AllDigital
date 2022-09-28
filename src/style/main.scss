@@ -1,0 +1,68 @@
+@import "./variable/variable.scss";
+* {
+  margin: $magrinBody;
+  padding: $padingBody;
+  box-sizing: border-box;
+}
+
+.baner {
+  max-width: 100%;
+  height: 500px;
+  background: $background;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.product h2 {
+  font-size:15rem;
+}
+.offer h2 {
+  font-size: 8rem;
+}
+.product h2,
+.offer h2 {
+  color: $bkcolor;
+}
+
+.product span {
+  font-size: $font;
+  margin-right: $margin;
+  cursor: pointer;
+  color: rgb(224, 222, 222);
+  padding: $pading;
+}
+
+.product button {
+    font-size: $font;
+    margin-top: 3rem;
+    border: none;
+    padding: $pading 2rem;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.offer h2{
+    margin-bottom: 2rem;
+}
+.offer span {
+  font-size: 4rem;
+  margin-left: $margin;
+  padding: $pading;
+  color: rgb(224, 222, 222);
+}
+
+.lab{
+    background: $bkcolor;
+}
+ .lab h2{
+    color: $background;
+ }
+  .lab span{
+    color: black;
+  }
+
+@media (max-width:930px){
+    .baner{
+        flex-direction: column;
+    }
+}

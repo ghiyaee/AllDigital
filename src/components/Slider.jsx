@@ -16,6 +16,7 @@ const Slider = () => {
      }, [counter]);
   return (
     <>
+      
       <div className="wrrap">
         <div className="arrow-left" onClick={() => dispatch("GoToPerv")}>
           <i className="fa-solid fa-circle-left"></i>

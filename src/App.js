@@ -10,10 +10,10 @@ import './style/app.scss'
     <div className="App">
          <Nabnar />
          <SearchBar />
-         < div className = 'content' >
-         <Slider/>
-         </div>
          <Main/>
+           {/* <Slider /> */}
+        
+
     </div> 
    </PerProvider>
     
