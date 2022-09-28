@@ -1,10 +1,9 @@
 @import "./variable/variable.scss";
 .wrrap {
-  // height: 100%;
   position: relative;
-   max-width:100%;
-    height: 350px;
-    margin: $margin;
+  max-width: 100%;
+  height: 350px;
+  margin: $margin;
 }
 .slideStyle {
   width: 100%;
@@ -18,17 +17,31 @@
 }
 .arrow-left {
   position: absolute;
-  bottom: 5%;
+  bottom: 4%;
   left: -2%;
   color: $bkcolor;
   cursor: pointer;
-  font-size:$font
+  font-size: $font;
 }
 .arrow-right {
   position: absolute;
-  bottom: 5%;
+  bottom: 4%;
   right: -2%;
   color: $bkcolor;
   cursor: pointer;
-  font-size:$font
+  font-size: $font;
+}
+
+@media (max-width: 600px) {
+  .wrrap {
+    height: 200px;
+  }
+  .arrow-left {
+    left: 20%;
+    bottom: -2%;
+  }
+  .arrow-right {
+    right: 20%;
+    bottom: -2%;
+  }
 }

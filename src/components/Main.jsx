@@ -49,13 +49,15 @@ const Main = () => {
       <div className="container">
         <div className="baner">
           <div className="product">
+            <div className="slider">
             <Slider/>
-            <div>
-              <span>appel</span>
-              <span>samsung</span>
-              <span>lg</span>
-              <span>motorola</span>
-              <span>xiaomi</span>
+            </div>
+            <div className="span-pro">
+              <span>Appel</span>
+              <span>Samsung</span>
+              <span>Lg</span>
+              <span>Motorola</span>
+              <span>Xiaomi</span>
             </div>
             <button>View</button>
           </div>
@@ -72,7 +74,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="baner lab">
+        {/* <div className="baner lab">
           <div className="product">
             <div>
               <h2>Labtab</h2>
@@ -130,7 +132,7 @@ const Main = () => {
           <div className="img">
             <img src={imgs[4]} alt="" />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

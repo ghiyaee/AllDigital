@@ -14,7 +14,7 @@
   align-items: center;
 }
 .product h2 {
-  font-size:15rem;
+  font-size: 15rem;
 }
 .offer h2 {
   font-size: 8rem;
@@ -30,19 +30,23 @@
   cursor: pointer;
   color: rgb(224, 222, 222);
   padding: $pading;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
 }
-
+.product span:hover {
+  color: tomato;
+}
 .product button {
-    font-size: $font;
-    margin-top: 3rem;
-    border: none;
-    padding: $pading 2rem;
-    cursor: pointer;
-    border-radius: 7px;
+  font-size: $font;
+  margin-top: 3rem;
+  border: none;
+  padding: $pading 2rem;
+  cursor: pointer;
+  border-radius: 7px;
 }
 
-.offer h2{
-    margin-bottom: 2rem;
+.offer h2 {
+  margin-bottom: 2rem;
 }
 .offer span {
   font-size: 4rem;
@@ -51,18 +55,44 @@
   color: rgb(224, 222, 222);
 }
 
-.lab{
-    background: $bkcolor;
+.lab {
+  background: $bkcolor;
 }
- .lab h2{
-    color: $background;
- }
-  .lab span{
-    color: black;
-  }
+.lab h2 {
+  color: $background;
+}
+.lab span {
+  color: black;
+}
 
-@media (max-width:930px){
-    .baner{
-        flex-direction: column;
-    }
+@media (max-width:930px) {
+  .baner {
+  flex-wrap: wrap;
+    height: 800px;
+  }
+ 
+  
+ 
+}
+@media (max-width:600px){
+  .baner{
+    flex-direction: column;
+    text-align: center;
+  }
+.offer h2{
+     font-size: 2rem;
+     text-align: center;
+  }
+   .offer span {
+    font-size: 2rem;
+  }
+.span-pro{
+  display: flex;
+  flex-direction: column;
+  // display: none;
+}
+.span span{
+   margin: 0;
+   padding: 1rem;
+}
 }

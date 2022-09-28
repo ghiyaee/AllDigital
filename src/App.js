@@ -11,9 +11,6 @@ import './style/app.scss'
          <Nabnar />
          <SearchBar />
          <Main/>
-           {/* <Slider /> */}
-        
-
     </div> 
    </PerProvider>
     
