@@ -13,6 +13,9 @@
   justify-content: space-around;
   align-items: center;
 }
+.product{
+  // margin-top: 2rem;
+}
 .product h2 {
   font-size: 15rem;
 }
@@ -32,9 +35,11 @@
   padding: $pading;
   transition: all 0.5s ease-in-out;
   font-weight: bold;
+  border-radius: 5px;
 }
 .product span:hover {
-  color: tomato;
+  background: $bkcolor;
+  color:$background
 }
 .product button {
   font-size: $font;
@@ -43,6 +48,7 @@
   padding: $pading 2rem;
   cursor: pointer;
   border-radius: 7px;
+  transition: all .5s ease-in-out;
 }
 
 .offer h2 {
@@ -68,11 +74,8 @@
 @media (max-width:930px) {
   .baner {
   flex-wrap: wrap;
-    height: 800px;
+    height: 750px;
   }
- 
-  
- 
 }
 @media (max-width:600px){
   .baner{
@@ -89,7 +92,7 @@
 .span-pro{
   display: flex;
   flex-direction: column;
-  // display: none;
+
 }
 .span span{
    margin: 0;

@@ -1,9 +1,7 @@
 import { createContext, useReducer } from "react";
-import img1 from "../imgs/img-4.jpg"
-import img2 from "../imgs/labtab1.png"
-import img3 from "../imgs/flash.jpg"
-import img4 from "../imgs/hdd.jpg"
-import img5 from "../imgs/sdd.png"
+import img1 from "../imgs/labap.png"
+import img2 from "../imgs/labsam.png"
+
 import img1_slider from "../img/img-1.png"
 import img2_slider from "../img/img-2.png"
 import img3_slider from "../img/img-3.png"
@@ -21,9 +19,10 @@ const initail = {
     showFlash: 'actv',
     showHdd: 'actv',
     showSdd: 'actv',
-    imgs: [img1, img2, img3, img4, img5],
+    imgs: [img1, img2],
     imgSlider: [img1_slider, img2_slider, img3_slider, img4_slider, img5_slider],
     counter: 0,
+    counter1:0
 }
 const reducer = (state, action) => { 
     switch (action) {
@@ -98,7 +97,16 @@ const reducer = (state, action) => {
               ...state,
               counter: state.counter > 0 ? state.counter - 1 : state.counter = state.imgSlider.length - 1
             }
-        
+          case 'GoToNextL':
+          return {
+              ...state,
+              counter1: state.counter1 < state.imgs.length - 1 ? state.counter1 + 1 : state.counter1 = 0
+          }
+          case 'GoToPervL':
+          return {
+              ...state,
+              counter1: state.counter1 > 0 ? state.counter1 - 1 : state.counter1 = state.imgs.length - 1
+          }
         
         
         

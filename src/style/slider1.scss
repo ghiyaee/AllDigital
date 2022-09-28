@@ -15,32 +15,41 @@
   transition: all 0.6s ease-in-out;
   cursor: pointer;
 }
-.arrow-left {
+.arrow-leftL {
   position: absolute;
-  bottom: .8%;
-  left: 93%;
-  color: $bkcolor;
+  bottom:.8%;
+  left: 80%;
+  color: $background ;
   cursor: pointer;
   font-size: $font;
 }
-.arrow-right {
+.arrow-rightL {
   position: absolute;
   bottom: .8%;
-  right: -5%;
-  color: $bkcolor;
+  right: 3%;
+ color: $background;
   cursor: pointer;
   font-size: $font;
 }
-
+.lab span:hover{
+ background: $background;
+ color:$color;
+ border-radius: 5px;
+}
+.lab button:hover{
+ background: $background;
+ color:$bkcolor;
+ border-radius: 5px;
+}
 @media (max-width: 600px) {
   .wrrap {
     height: 200px;
   }
-  .arrow-left {
+  .arrow-leftL {
     left: 20%;
     bottom: -2%;
   }
-  .arrow-right {
+  .arrow-rightL {
     right: 20%;
     bottom: -2%;
   }

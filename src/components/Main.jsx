@@ -2,6 +2,7 @@ import { useContext, useState,useEffect} from "react";
 import { Context } from "../context";
 import "../style/main.scss";
 import Slider from "./Slider";
+import Slider1 from "./SliderLab";
 const Main = () => {
   const { state, dispach } = useContext(Context);
   const { imgs } = state;
@@ -50,7 +51,7 @@ const Main = () => {
         <div className="baner">
           <div className="product">
             <div className="slider">
-            <Slider/>
+              <Slider />
             </div>
             <div className="span-pro">
               <span>Appel</span>
@@ -74,20 +75,9 @@ const Main = () => {
           </div>
         </div>
 
-        {/* <div className="baner lab">
-          <div className="product">
-            <div>
-              <h2>Labtab</h2>
-              <span>appel</span>
-              <span>samsung</span>
-              <span>lg</span>
-              <span>acer</span>
-              <span>xiaomi</span>
-            </div>
-            <button>View</button>
-          </div>
+        <div className="baner lab">
           <div className="offer">
-            <h2>Offer 10%</h2>
+            <h2>Offer 5%</h2>
             <div className="span">
               <span className="timer color">hr</span>
               <span className="timer">{hr_} </span>
@@ -97,42 +87,19 @@ const Main = () => {
               <span className="timer">{sec_}</span>
             </div>
           </div>
-        </div>
-
-        <div className="slider-top">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe
-            itaque expedita! Laboriosam debitis voluptates quasi sunt obcaecati,
-            minima odit distinctio necessitatibus dolorum molestias, ratione
-            sequi doloribus eius veritatis nulla!
-          </p>
-          <div className="img">
-            <img src={imgs[2]} alt="" />
+          <div className="product">
+            <div className="slider">
+              <Slider1 />
+            </div>
+            <div className="span-pro">
+              <span >appel</span>
+              <span >samsung</span>
+              <span >acer</span>
+              <span >xiaomi</span>
+            </div>
+            <button>View</button>
           </div>
         </div>
-        <div className="slider-top">
-          <div className="img">
-            <img src={imgs[3]} alt="" />
-          </div>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe
-            itaque expedita! Laboriosam debitis voluptates quasi sunt obcaecati,
-            minima odit distinctio necessitatibus dolorum molestias, ratione
-            sequi doloribus eius veritatis nulla!
-          </p>
-        </div>
-        <div className="slider-top">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe
-            itaque expedita! Laboriosam debitis voluptates quasi sunt obcaecati,
-            minima odit distinctio necessitatibus dolorum molestias, ratione
-            sequi doloribus eius veritatis nulla!
-          </p>
-          <div className="img">
-            <img src={imgs[4]} alt="" />
-          </div>
-        </div> */}
       </div>
     </>
   );
