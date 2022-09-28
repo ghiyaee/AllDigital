@@ -70,7 +70,16 @@
 .lab span {
   color: black;
 }
-
+.product button:hover{
+ background: $bkcolor;
+ color:$background;
+ border-radius: 5px;
+}
+.lab span:hover{
+ background: $background;
+ color:$bkcolor ;
+ border-radius: 5px;
+}
 @media (max-width:930px) {
   .baner {
   flex-wrap: wrap;
