@@ -3,8 +3,13 @@
   margin: $magrinBody;
   padding: $padingBody;
   box-sizing: border-box;
-}
 
+}
+.filter{
+  filter: contrast(175%) brightness(9%);
+  filter:blur(5px);
+  cursor: none;
+}
 .baner {
   max-width: 100%;
   height: 500px;
@@ -13,16 +18,14 @@
   justify-content: space-around;
   align-items: center;
 }
-.product{
-  // margin-top: 2rem;
-}
-.product h2 {
-  font-size: 15rem;
+
+.product .span-pro,.span-mobile,.span-flash{
+  margin-top: 2rem;
 }
 .offer h2 {
   font-size: 8rem;
 }
-.product h2,
+
 .offer h2 {
   color: $bkcolor;
 }
@@ -75,11 +78,16 @@
  color:$background;
  border-radius: 5px;
 }
-.lab span:hover{
+.span-pro span:hover{
  background: $background;
  color:$bkcolor ;
  border-radius: 5px;
 }
+.product .btn-lab:hover{
+ background: $background;
+ color: $bkcolor;
+}
+
 @media (max-width:930px) {
   .baner {
   flex-wrap: wrap;
@@ -98,7 +106,7 @@
    .offer span {
     font-size: 2rem;
   }
-.span-pro{
+.span-pro,.span-mobile{
   display: flex;
   flex-direction: column;
 

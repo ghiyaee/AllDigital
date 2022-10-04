@@ -1,0 +1,79 @@
+@import "./variable/variable.scss";
+.container-list {
+  width: 95%;
+  height: 7%;
+  background: $bkcolor;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 3rem 0.1rem;
+  position: relative;
+}
+.wrraplist{
+  transform: translateX(-3000px)
+}
+
+.wrraplist .img {
+  width: 300px;
+  height: 300px;
+  background: rgb(249, 246, 246);
+  margin: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease-in-out;
+}
+
+.img img {
+  width: 50%;
+}
+ .titel{
+  padding: 2rem;
+
+ }
+  .titel p,button{
+   font-size:2rem;
+  }
+
+  .titel button{
+    margin-top: 1rem;
+    border: none;
+    background: rgba(50, 50, 250, 0.6);
+    padding: 1rem;   border-radius: 7px;
+    color:#fff
+  }
+// .wrraplist{
+//    transform: translateX(0px)
+// }
+
+.arrow-leftL {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  color: rgba(50, 50, 250, 0.5);
+  cursor: pointer;
+  font-size: $font;
+}
+.arrow-rightL {
+  position: absolute;
+   bottom: 50%;
+  right: 0;
+  cursor: pointer;
+  font-size: $font;
+  color: rgba(50, 50, 250, 0.5);
+}
+
+@media (max-width: 600px) {
+  .wrraplist {
+    height: 100px;
+  }
+  .arrow-leftL {
+    left: 20%;
+    bottom: -2%;
+  }
+  .arrow-rightL {
+    right: 20%;
+    bottom: -2%;
+  }
+}

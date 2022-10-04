@@ -1,28 +1,39 @@
 import { createContext, useReducer } from "react";
-import img1 from "../imgs/labap.png"
-import img2 from "../imgs/labsam.png"
+
 
 import img1_slider from "../img/img-1.png"
-import img2_slider from "../img/img-2.png"
-import img3_slider from "../img/img-3.png"
-import img4_slider from "../img/img-4.png"
-import img5_slider from "../img/img-5.png"
-
-
+import img2_slider from "../img/labap.png"
+import img3_slider from "../img/flash3.png"
+import img4_slider from "../img/hdd.png"
+import img5_slider from "../img/labsam.png"
+import img6_slider from "../img/samsdd2.png"
+import img7_slider from "../img/flash1.png"
+import img8_slider from "../img/flash2.png"
+import img9_slider from "../img/flash4.png"
+import img10_slider from "../img/img-2.png"
+import img11_slider from "../img/img-3.png"
+import img12_slider from "../img/img-4.png"
+import img13_slider from "../img/img-5.png"
+import img14_slider from "../img/samsdd.png"
+import img15_slider from "../img/hddd.png"
 const Context = createContext();
 const initail = {
     sidebar: 'Sidehiden',
     openMenu: 'openMenu',
     closeMenu: 'closeMenu',
+    filtrMenu:'',
     showMobile: 'actv',
     showLabtab: 'actv',
     showFlash: 'actv',
     showHdd: 'actv',
     showSdd: 'actv',
-    imgs: [img1, img2],
-    imgSlider: [img1_slider, img2_slider, img3_slider, img4_slider, img5_slider],
+    imgSlider: [img1_slider, img2_slider, img3_slider, img4_slider, img6_slider],
+    listImg: [img1_slider, img2_slider, img3_slider, img4_slider, img6_slider,
+             img5_slider, img7_slider, img8_slider, img9_slider, img10_slider,
+             img11_slider, img12_slider, img13_slider, img14_slider, img15_slider],
     counter: 0,
-    counter1:0
+    counter1:-3000,
+    
 }
 const reducer = (state, action) => { 
     switch (action) {
@@ -30,13 +41,15 @@ const reducer = (state, action) => {
             return {
                 ...state, sidebar: state.sidebar = 'SidehidenShow',
                     openMenu: state.openMenu = 'closeMenu',
-                    closeMenu: state.closeMenu = 'openMenu'
+                closeMenu: state.closeMenu = 'openMenu',
+                    filtrMenu: state.filtrMenu = 'filter'
             }
         case 'HIDEN':
             return {
                 ...state, sidebar: state.sidebar = 'Sidehiden',
                     closeMenu: state.closeMenu = 'closeMenu',
-                    openMenu: state.openMenu = 'openMenu'
+                openMenu: state.openMenu = 'openMenu',
+                      filtrMenu: state.filtrMenu = ''
             } 
         case 'MOBILE':
             return {
@@ -97,18 +110,17 @@ const reducer = (state, action) => {
               ...state,
               counter: state.counter > 0 ? state.counter - 1 : state.counter = state.imgSlider.length - 1
             }
-          case 'GoToNextL':
-          return {
-              ...state,
-              counter1: state.counter1 < state.imgs.length - 1 ? state.counter1 + 1 : state.counter1 = 0
-          }
-          case 'GoToPervL':
-          return {
-              ...state,
-              counter1: state.counter1 > 0 ? state.counter1 - 1 : state.counter1 = state.imgs.length - 1
-          }
-        
-        
+         case 'GoToNextList':
+         return {
+             ...state,
+             counter1: state.counter1 <= 0 ? state.counter1 - 300 : state.counter1 = 0
+         }
+         case 'GoToPervList':
+         return {
+             ...state,
+             counter1: state.counter1 < 0 ? state.counter1 + 300 : state.counter1 =0
+         }
+          
         
         
         

@@ -2,35 +2,78 @@
 .wrrap {
   position: relative;
   max-width: 100%;
-  height: 350px;
+  height:500px;
   margin: $margin;
-}
-.slideStyle {
-  width: 100%;
-  height: 100%;
+  background: $background;
+  display: flex;
+  align-items: center;
+
+  .imgStyle {
+  width: 50%;
+  height:80%;
   border-radius: 10px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   transition: all 0.6s ease-in-out;
-  cursor: pointer;
+}
+.text{
+  width: 50%;
 }
 .arrow-left {
   position: absolute;
-  bottom: .8%;
-  left: 93%;
+  bottom:0;
+  left:93%;
   color: $bkcolor;
   cursor: pointer;
   font-size: $font;
+  padding: 2rem;
+  display: none;
+   transition: all 1s;
 }
 .arrow-right {
   position: absolute;
-  bottom: .8%;
-  right: -5%;
+  bottom: 0;
+  right:0%;
   color: $bkcolor;
   cursor: pointer;
   font-size: $font;
+    padding: 2rem;
+     display: none;
+     transition: all 1s;
 }
+
+h2{
+  font-size: $font;
+  margin: $margin;
+  font-weight:900;
+}
+p{
+  font-size: $font;
+   margin: $margin;
+}
+button {
+  border: none;
+  padding: $pading;
+  font-size: $font;
+  cursor: pointer;
+   margin: $margin;
+   border-radius: 7px;
+}
+button:hover{
+background: $backgroundb;
+color: $bkcolor;
+}
+}
+.wrrap:hover{
+  .arrow-left,.arrow-right{
+    display: block;
+  }
+  // .text{
+  //   padding: $pading;
+  // }
+}
+
 
 @media (max-width: 600px) {
   .wrrap {

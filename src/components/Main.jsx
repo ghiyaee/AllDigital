@@ -1,11 +1,12 @@
 import { useContext, useState,useEffect} from "react";
 import { Context } from "../context";
 import "../style/main.scss";
+import ListSlider from "./ListSider";
 import Slider from "./Slider";
-import Slider1 from "./SliderLab";
+
 const Main = () => {
-  const { state, dispach } = useContext(Context);
-  const { imgs } = state;
+  const { state, dispatch } = useContext(Context);
+  const { imgs, filtrMenu } = state;
   let [mil_, setMil_] = useState(1000);
   let [sec_, setSec_] = useState(0);
   let [min_, setMin_] = useState(0);
@@ -47,59 +48,12 @@ const Main = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="baner">
-          <div className="product">
-            <div className="slider">
-              <Slider />
-            </div>
-            <div className="span-pro">
-              <span>Appel</span>
-              <span>Samsung</span>
-              <span>Lg</span>
-              <span>Motorola</span>
-              <span>Xiaomi</span>
-            </div>
-            <button>View</button>
-          </div>
-          <div className="offer">
-            <h2>Offer 10%</h2>
-            <div className="span">
-              <span className="timer color">hr</span>
-              <span className="timer">{hr_} </span>
-              <span className="timer color">mi</span>
-              <span className="timer">{min_} </span>
-              <span className="timer color">se</span>
-              <span className="timer">{sec_}</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="baner lab">
-          <div className="offer">
-            <h2>Offer 5%</h2>
-            <div className="span">
-              <span className="timer color">hr</span>
-              <span className="timer">{hr_} </span>
-              <span className="timer color">mi</span>
-              <span className="timer">{min_} </span>
-              <span className="timer color">se</span>
-              <span className="timer">{sec_}</span>
-            </div>
-          </div>
-          <div className="product">
-            <div className="slider">
-              <Slider1 />
-            </div>
-            <div className="span-pro">
-              <span >appel</span>
-              <span >samsung</span>
-              <span >acer</span>
-              <span >xiaomi</span>
-            </div>
-            <button>View</button>
-          </div>
-        </div>
+      <div
+        className={`container ${filtrMenu} `}
+        onClick={() => dispatch("HIDEN")}
+      >
+        <Slider />
+        <ListSlider/>
       </div>
     </>
   );
