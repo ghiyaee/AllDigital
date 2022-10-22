@@ -1,0 +1,59 @@
+@import '../style/variable/variable.scss';
+.sidebarLeft {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width:320px;
+  max-height: 100vh;
+  padding: 3rem;
+  background: $bkgroundH;
+  z-index:999;
+  overflow-y: scroll;
+  transition: all .6s ease-in-out;
+  color: #fff;
+}
+.Sidehiden {
+  transform: translateX(-1000px);
+}
+.SidehidenShow {
+  transform: translateX(0px);
+}
+.sidebarLeft ul ul{
+  list-style: none;
+  color: $color;
+
+}
+
+.list {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trans .ul li {
+  font-size: $font;
+  color: $bkcolor;
+  cursor: pointer;
+}
+
+
+.actv {
+  display: none;
+}
+.show {
+  display: block;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background-color: $background;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(250, 46, 46);
+}
+.sidebarLeft .list {
+  font-size: $font;
+  margin: 2rem auto;
+}

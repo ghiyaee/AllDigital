@@ -3,10 +3,12 @@ import { Context } from "../context";
 import "../style/main.scss";
 import ListSlider from "./ListSider";
 import Slider from "./Slider";
-
+import ListProduct from "./ListProduct";
+import Offer from "./Offer";
+import Footer from "./Footer";
 const Main = () => {
   const { state, dispatch } = useContext(Context);
-  const { imgs, filtrMenu } = state;
+  const { imgs, filtrMenu,upper } = state;
   let [mil_, setMil_] = useState(1000);
   let [sec_, setSec_] = useState(0);
   let [min_, setMin_] = useState(0);
@@ -37,6 +39,21 @@ const Main = () => {
       setMil_((mil_ -= 10));
     }
   }
+    const scrollUp = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+  useEffect(() => {
+     window.addEventListener("scroll", () => {
+       if (window.scrollY > 100) {
+         dispatch("Upper");
+       } else {
+         dispatch("Down");
+       }
+     });
+  })
   useEffect(() => {
     const rest = setInterval(() => {
       dPluse();
@@ -53,7 +70,13 @@ const Main = () => {
         onClick={() => dispatch("HIDEN")}
       >
         <Slider />
-        <ListSlider/>
+        <Offer />
+        <ListSlider />
+        <ListProduct />
+        <Footer />
+        <div className={`upper ${upper}`} onClick={scrollUp}>
+          ^
+        </div>
       </div>
     </>
   );

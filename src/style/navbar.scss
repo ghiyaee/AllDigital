@@ -14,10 +14,11 @@ html {
   background: $bkgroundH;
   display: $dsFlex;
   align-items: center;
-
+ 
   h1 {
     font-family: $font-logo;
     color: $bkcolor;
+    cursor: pointer;
   }
   a {
     color: $color;
@@ -33,7 +34,6 @@ html {
     animation-name: animi;
     animation-duration: 1s;
     border-radius: 10px;
-    background: rgb(47, 90, 155);
     color: $bkcolor;
   }
   
@@ -79,67 +79,6 @@ html {
   
 }
 
-.sidebarLeft {
-  position: absolute;
-  top: 10;
-  left: 0;
-  width: 320px;
-  height: 100%;
-  padding: 3rem;
-  background: $background;
-  z-index:999;
-  overflow-y: scroll;
-  transition: all .6s ease-in-out;
-  h2 {
-    color: $bkcolor;
-    font-family: $font-logo;
-  }
-}
-.Sidehiden {
-  transform: translateX(-1000px);
-}
-.SidehidenShow {
-  transform: translateX(0px);
-}
-.sidebarLeft ul {
-  list-style: none;
-  color: $color;
-}
-
-.list {
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.ul li {
-  font-size: $font;
-  color: $bkcolor;
-  cursor: pointer;
-}
-.actv {
-  display: none;
-}
-.show {
-  display: block;
-}
-::-webkit-scrollbar {
-  width: 3px;
-}
-::-webkit-scrollbar-track {
-  background-color: $background;
-}
-::-webkit-scrollbar-thumb {
-  background-color: rgb(250, 46, 46);
-}
-.sidebarLeft .list {
-  font-size: $font;
-  margin: 2rem auto;
-}
-// .opacty{
-//   opacity: $opacty;
-// }
 @media (max-width: 770px) {
   .openMenu {
     display: $displayShow;

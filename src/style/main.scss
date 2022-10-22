@@ -3,11 +3,10 @@
   margin: $magrinBody;
   padding: $padingBody;
   box-sizing: border-box;
-
 }
-.filter{
+.filter {
   filter: contrast(175%) brightness(9%);
-  filter:blur(5px);
+  filter: blur(5px);
   cursor: none;
 }
 .baner {
@@ -19,7 +18,9 @@
   align-items: center;
 }
 
-.product .span-pro,.span-mobile,.span-flash{
+.product .span-pro,
+.span-mobile,
+.span-flash {
   margin-top: 2rem;
 }
 .offer h2 {
@@ -42,7 +43,7 @@
 }
 .product span:hover {
   background: $bkcolor;
-  color:$background
+  color: $background;
 }
 .product button {
   font-size: $font;
@@ -51,7 +52,7 @@
   padding: $pading 2rem;
   cursor: pointer;
   border-radius: 7px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .offer h2 {
@@ -73,46 +74,65 @@
 .lab span {
   color: black;
 }
-.product button:hover{
- background: $bkcolor;
- color:$background;
- border-radius: 5px;
+.product button:hover {
+  background: $bkcolor;
+  color: $background;
+  border-radius: 5px;
 }
-.span-pro span:hover{
- background: $background;
- color:$bkcolor ;
- border-radius: 5px;
+.span-pro span:hover {
+  background: $background;
+  color: $bkcolor;
+  border-radius: 5px;
 }
-.product .btn-lab:hover{
- background: $background;
- color: $bkcolor;
+.product .btn-lab:hover {
+  background: $background;
+  color: $bkcolor;
 }
-
-@media (max-width:930px) {
+.upper {
+  position: fixed;
+  bottom:80px;
+  right: 10px;
+  border-radius: 50%;
+  color:#fff;
+  font-size: 5rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background:rgb(213, 56, 28);
+  text-align: center;
+}
+.showUp {
+  display: block;
+}
+.hidenUp {
+  display: none;
+}
+@media (max-width: 930px) {
   .baner {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
     height: 750px;
   }
 }
-@media (max-width:600px){
-  .baner{
+@media (max-width: 600px) {
+  .baner {
     flex-direction: column;
     text-align: center;
   }
-.offer h2{
-     font-size: 2rem;
-     text-align: center;
+  .offer h2 {
+    font-size: 2rem;
+    text-align: center;
   }
-   .offer span {
+  .offer span {
     font-size: 2rem;
   }
-.span-pro,.span-mobile{
-  display: flex;
-  flex-direction: column;
-
-}
-.span span{
-   margin: 0;
-   padding: 1rem;
-}
+  .span-pro,
+  .span-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .span span {
+    margin: 0;
+    padding: 1rem;
+  }
 }

@@ -1,12 +1,11 @@
 import { useContext } from "react";
 import { Context } from "../context";
-import "../style/navbar.scss";
+import "../style/sildeBarList.scss";
 const SidebarList = () => {
     const { state, dispatch } = useContext(Context);
     return (
       <div className={`sidebarLeft ${state.sidebar}`}>
         <ul className="trans">
-          {/* <h2>All Digital</h2> */}
           <li
             className="list "
             onClick={() =>
@@ -22,14 +21,14 @@ const SidebarList = () => {
               }`}
             ></i>
           </li>
-            <ul className={` ul ${state.showMobile}`}>
-              <li>Appel</li>
-              <li>Samsung</li>
-              <li>Lg</li>
-              <li>Xiaomi</li>
-              <li>Motorola</li>
-            </ul>
-         
+          <ul className={` ul ${state.showMobile }`}>
+            <li >Appel</li>
+            <li >Samsung</li>
+            <li >Lg</li>
+            <li >Xiaomi</li>
+            <li >Motorola</li>
+          </ul>
+
           <li
             className="list"
             onClick={() =>

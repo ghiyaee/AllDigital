@@ -3,18 +3,19 @@ import { useRef, useState, useEffect } from "react";
 import { Context } from "../context";
 import "../style/navbar.scss";
 import SidebarLeft from "./SidebarList";
-const Nabnar = () => {
+const Nabnar = ({ setShowCard }) => {
   const { state, dispatch } = useContext(Context);
   return (
     <>
       <div className="navbar">
         <div className="logo">
           <i className="fa-solid fa-store"></i>
-          <h1>All Digital</h1>
+          <h1 onClick={() => setShowCard(false)}>All Digital</h1>
         </div>
         <div className="list-nav">
           <a href="#">Mobile</a>
           <a href="#">Labtab</a>
+          <a href="#">Tablet</a>
           <a href="#">Flash Memory</a>
           <a href="#">Hdd</a>
           <a href="#">Sdd</a>
@@ -34,7 +35,7 @@ const Nabnar = () => {
           </div>
         </button>
       </div>
-      <SidebarLeft/>
+      <SidebarLeft />
     </>
   );
 };

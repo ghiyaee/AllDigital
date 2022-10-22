@@ -8,6 +8,7 @@
   width: 100%;
   align-items: center;
   border: 3px solid rgb(243, 241, 241);
+  background:#fff ;
   .form{
     flex: 4;
     margin: 1rem;
@@ -28,6 +29,7 @@
     margin: 1rem;
     border: 3px solid rgb(243, 241, 241);
     border-radius: 7px;
+    position: relative;
   }
   .sign-buy a {
     text-decoration: none;
@@ -37,6 +39,25 @@
     margin-left: 2rem;
       color: rgb(109, 106, 106);
   }
+  .count-baslet{
+    position: absolute;
+    top:3px;
+    right: 3px;
+    width: 15px;
+     height:15px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: bold;
+     color: tomato;
+    //  border: 1px solid yellow;
+     background: #fff;
+     cursor: pointer;
+     font-size: 2.5rem;
+     z-index: 100;
+  }
+
   @media (max-width: 600px) {
     .input-search,.sign-buy{
         font-size: 1.3rem;
