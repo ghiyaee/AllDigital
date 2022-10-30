@@ -1,0 +1,49 @@
+@import '../style/variable/variable.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-mobile{
+    width:100%;
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+    gap: 2.5rem;
+    .wrrap-mobile{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+     width: 250px;
+    height: 350px;
+   
+}
+.wrrap-mobile .mobile-img{
+   width: 250px;
+    height: 300px;
+}
+
+.mobile-titel{
+    height: 50px;
+}
+
+.mobile-titel p , button{
+    margin:0.3rem;
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+.mobile-titel span{
+    color: tomato;
+}
+button {
+    border: none;
+    padding: $pading;
+    cursor: pointer;
+    border-radius: 7px;
+    background: #eee;
+  }
+  button:hover {
+    background: $backgroundb;
+    color: $bkcolor;
+  }
+}

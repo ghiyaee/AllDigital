@@ -46,18 +46,18 @@ const Offer = () => {
   const render = productOffer.map((item, ind) => {
     const addHandel = (item) => {
       if (card.indexOf(item) === -1) {
-        item.count++
-        card.push(item)
-          dispatch("Basket")
+        item.count ++
+       card.push(item)
+        dispatch("Basket")
         
     }
   }
         return (
           <div className="cradOffer" key={item.id}>
-            <div className="offer-text">
-        <p>OFFER%</p>
-      </div>
             <div className="img-offer">
+              <div className="offer-text">
+                <p>OFFER%</p>
+              </div>
               <div className="imgoffer">
                 <img src={item.img} alt="" />
               </div>
@@ -65,15 +65,18 @@ const Offer = () => {
             <div className="titel-Offer">
               <div className="titeltext">
                 <div>
-                <p>{item.model}</p>
-                <p>${item.price}</p>
+                  <p>{item.model}</p>
+                  <p>${item.price}</p>
                 </div>
                 <div className="buying-offer">
+                  <div className="arrows">
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </div>
                   <i
                     className="fa-sharp fa-solid fa-cart-shopping "
                     onClick={() => addHandel(item)}
-                    ></i>
-                </div>  
+                  ></i>
+                </div>
               </div>
               <div className="timeroffer">
                 <span>{hr_}</span>

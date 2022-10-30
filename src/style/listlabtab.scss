@@ -1,0 +1,53 @@
+@import '../style/variable/variable.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-labtab{ 
+    width:100%;
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+    gap: 2.5rem;
+    .wrrap-labtab{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+     width: 350px;
+     height: 400px;
+   
+ }
+  .wrrap-labtab .labtab-img {
+   width: 350px;
+    height: 400px;
+ }
+ .wrrap-labtab .labtab-img img{
+    width: 100%;
+ }
+
+  .labtab-titel{
+    height: 60px;
+  
+ }
+
+   .labtab-titel p , button{
+    margin:0.3rem;
+    font-weight: bold;
+    font-size: 1.9rem;
+  }
+  .labtab-titel span{
+    color: tomato;
+  }
+  button {
+    border: none;
+    padding: $pading;
+    cursor: pointer;
+    border-radius: 7px;
+    background: #eee;
+   }
+  button:hover {
+    background: $backgroundb;
+    color: $bkcolor;
+  }
+}

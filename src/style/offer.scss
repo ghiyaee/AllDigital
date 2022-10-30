@@ -17,53 +17,38 @@
   background: rgba(44, 57, 171);
   border-radius: 15px;
   .offer-text {
-    position: absolute;
-    top: 80px;
-     left:-15px;
-     transform: rotate(-45deg);
-    
+    // position: absolute;
+    // top: 40px;
+    // left: 0px;
+    transform: rotate(-45deg);
   }
-  .offer-text p{
-    font-size: 5rem;
-     text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
-       animation: flicker 1.5s infinite alternate; 
-      // font-family:"Sacramento", sans-serif ;
+  .offer-text p  {
+    font-size: 4rem;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 32px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 15px #0fa;
+    animation: flicker 1.5s infinite alternate;
+    // font-family:"Sacramento", sans-serif ;
   }
   @keyframes flicker {
-    
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    0%,
+    // 18%,
+    // 22%,
+    // 25%,
+    // 53%,
+    57%,
+    100% {
+      text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+        0 0 80px #0fa, 0 0 10px #0fa, 0 0 10px #0fa, 0 0 10px #0fa;
+    }
 
-      text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px #0fa,
-      0 0 80px #0fa,
-      0 0 90px #0fa,
-      0 0 100px #0fa,
-      0 0 150px #0fa;
-  
-  }
-  
-  0%, 100% {        
+    0%,
+    100% {
       text-shadow: none;
-  }    
-}
-  // .offer-text p {
-  //   color: #fff;
-  //   font-size: 3rem;
-    
-  // }
+    }
+  }
+ 
   .cradOffer {
-    width: 300px;
+    width: 350px;
     height: 350px;
     background: $backgroundO;
     border-radius: 20px;
@@ -72,8 +57,8 @@
     justify-content: space-around;
     margin: 1rem;
     flex-wrap: wrap;
-        // cursor: pointer;
-        margin-top: 6rem;
+    // cursor: pointer;
+    margin-top: 6rem;
   }
   .img-offer {
     width: 300px;
@@ -86,8 +71,7 @@
     width: 100%;
   }
 
-
-  .titel-Offer{
+  .titel-Offer {
     position: relative;
   }
   .titeltext {
@@ -95,6 +79,8 @@
     justify-content: space-around;
     font-weight: bold;
     color: #fff;
+    position: relative;
+    align-items: center;
   }
   .timeroffer {
     text-align: center;
@@ -106,17 +92,25 @@
     color: rgba(183, 28, 1, 0.998);
     font-size: 3rem;
   }
-  .buying-offer{
+  .buying-offer {
     cursor: pointer;
+    display: flex;
+    gap:3rem;
+    align-items: center;
+
   }
-  // .buying-offer:hover{
-  //  transform: rotate(360deg);
-  //  transition: all .7s ease-in-out;
-  //  color:tomato
-  // }
+  .arrows{
+    font-weight: bold;
+    font-size: 3rem;
+    animation: anima  3s linear .5s infinite alternate ;
+    color: tomato;
+  }
+  @keyframes anima{
+   from{ transform: translate(0px)};
+   to{transform: translate(25px);}
+}
 
 }
 
 @media (max-width: 600px) {
- 
 }

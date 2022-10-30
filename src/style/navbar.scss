@@ -11,32 +11,40 @@ html {
 .navbar {
   width: 100%;
   height: 100px;
-  background: $bkgroundH;
+  background: #fff;
   display: $dsFlex;
   align-items: center;
- 
-  h1 {
-    font-family: $font-logo;
-    color: $bkcolor;
-    cursor: pointer;
+
+  .logo {
+    flex: 1;
+    margin-left: 2rem;
   }
-  a {
-    color: $color;
+  .logo-nav {
+    text-decoration: none;
+  }
+  .logo-nav h1 {
+    font-family: $font-logo;
+    color: tomato;
+    cursor: pointer;
+    font-size: 2.5rem;
+  }
+  .list-nav {
+    color: #000;
     text-decoration: none;
     font-size: $fontNavbar;
     margin: 1rem;
     padding: 3.2rem 0.5rem;
     border-bottom: $boderbottom;
     transition: $trans;
-    height: 100px;
+    font-family: $font-logo;
   }
-  a:hover {
+  .list-nav:hover {
     animation-name: animi;
     animation-duration: 1s;
     border-radius: 10px;
-    color: $bkcolor;
+    color: tomato;
   }
-  
+
   @keyframes animi {
     from {
       opacity: 0;
@@ -46,17 +54,7 @@ html {
     }
   }
 
-  .logo {
-    flex: 1;
-    margin: 0.5rem;
-    font-size: 1.2rem;
-    color: $color;
-    display: $dsFlex;
-    align-items: center;
-  }
-  .logo h1 {
-    margin: $margin;
-  }
+
   .btn-menu {
     display: flex;
     justify-content: center;
@@ -68,7 +66,7 @@ html {
   .btn-menu i {
     margin-right: 4rem;
     font-size: 2rem;
-    color: $bkcolor;
+    color: #000;
   }
   .closeMenu {
     display: $displayNone;
@@ -76,14 +74,13 @@ html {
   .openMenu {
     display: block;
   }
-  
 }
 
 @media (max-width: 770px) {
   .openMenu {
     display: $displayShow;
   }
-  .navbar a {
+  .list-nav {
     display: $displayNone;
   }
   .logo h1,

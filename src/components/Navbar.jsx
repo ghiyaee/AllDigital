@@ -1,24 +1,40 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { useRef, useState, useEffect } from "react";
 import { Context } from "../context";
 import "../style/navbar.scss";
 import SidebarLeft from "./SidebarList";
-const Nabnar = ({ setShowCard }) => {
+import { Link } from "react-router-dom";
+const Navbar = ({ setShowMain}) => {
   const { state, dispatch } = useContext(Context);
+
   return (
     <>
       <div className="navbar">
         <div className="logo">
-          <i className="fa-solid fa-store"></i>
-          <h1 onClick={() => setShowCard(false)}>All Digital</h1>
+          <Link className="logo-nav" to={"/"}>
+            <h1>All Digital</h1>
+          </Link>
         </div>
-        <div className="list-nav">
-          <a href="#">Mobile</a>
-          <a href="#">Labtab</a>
-          <a href="#">Tablet</a>
-          <a href="#">Flash Memory</a>
-          <a href="#">Hdd</a>
-          <a href="#">Sdd</a>
+        <div>
+          <Link className="list-nav" to="/mobile">
+            Mobile
+          </Link>
+          <Link className="list-nav" to="/labtab">
+            Labtab
+          </Link>
+          <Link className="list-nav" to="/tablet">
+            Tablet
+          </Link>
+          <Link className="list-nav" to="/Flash Memory">
+            Flash
+          </Link>
+          <Link className="list-nav" to="/Hdd Disk">
+            Hard ext
+          </Link>
+          <Link className="list-nav" to="/Sdd Disk">
+            Hard sdd
+          </Link>
         </div>
         <button className="btn-menu">
           <div>
@@ -40,4 +56,4 @@ const Nabnar = ({ setShowCard }) => {
   );
 };
 
-export default Nabnar;
+export default Navbar;

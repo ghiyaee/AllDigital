@@ -1,8 +1,9 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { Context } from "../context";
 import "../style/searchbar.scss";
 import Basket from "./Basket";
-const SearchBar = ({  setShowCard }) => {
+const SearchBar = ({ setShowMain }) => {
   const { state, dispatch } = useContext(Context);
   return (
     <>
@@ -17,11 +18,13 @@ const SearchBar = ({  setShowCard }) => {
           </form>
         </div>
         <div className="sign-buy">
-          <a href="#">Sign Up / Login</a>
-          <i className="fa-sharp fa-solid fa-cart-shopping"></i>
-          <span className="count-baslet" onClick={() => setShowCard(true)}>
-            {state.basket}
-          </span>
+          {/* <a href="#">Sign Up / Login</a> */}
+          <Link to="/sign">SIGN UP/ </Link>
+          <Link to="/login">LOGIN</Link>
+          <Link to={"/basket"}>
+            <i className="fa-sharp fa-solid fa-cart-shopping"></i>
+          </Link>
+          <span className="count-baslet">{state.basket}</span>
         </div>
       </div>
     </>

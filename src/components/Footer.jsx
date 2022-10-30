@@ -44,7 +44,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-contact">
-        {/* <span>Contact Us :</span> */}
+        <span>Contact Us :</span>
         <span>
           <i className="fa-brands fa-telegram"></i>
         </span>
