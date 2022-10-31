@@ -6,7 +6,8 @@ import '../style/listmobile.scss'
 const ListMobile = () => {
   const { state, dispatch } = useContext(Context);
   let { productsMobile, card } = state;
-  const [add,setAdd]=useState([])
+  const [add, setAdd] = useState([])
+  // const style = { backgroundImage: `url(${imgSlider[counter].img})` };
   const render = productsMobile.map((item, ind) => {
     const addHandel = (item) => {
       if (card.indexOf(item) === -1) {
@@ -22,10 +23,17 @@ const ListMobile = () => {
           <img src={item.img} alt="" />
         </div>
         <div className="mobile-titel">
-          <p><span>Brand</span> {item.model}</p>
-          <p><span>Ram</span> {item.ram}</p>
-          <p><span>price</span> {item.price}$</p>
-          <button onClick={()=> addHandel(item)}>Add To Basket</button>
+          <p>
+            <span>Brand</span> {item.model}
+          </p>
+          <p>
+            <span>price</span> {item.price}$
+          </p>
+          <p>
+            <span>Ram</span> {item.ram}
+          </p>
+
+          <button onClick={() => addHandel(item)}>Add To Basket</button>
         </div>
       </div>
     );

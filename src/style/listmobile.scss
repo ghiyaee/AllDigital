@@ -10,21 +10,32 @@
    justify-content: center;
    flex-wrap: wrap;
     gap: 2.5rem;
+       text-align: center;
+  
     .wrrap-mobile{
-    padding: 4rem;
     display: flex;
     flex-direction: column;
      width: 250px;
     height: 350px;
-   
-}
-.wrrap-mobile .mobile-img{
+     margin: 3rem;
+     transition: all .5s;
+     cursor: pointer;
+    
+   }
+   .wrrap-mobile:hover{
+    transform: scale(1.2);
+     padding:1rem 2rem;
+       border-right: 3px solid rgb(249, 173, 173);
+   }
+  .mobile-img{
    width: 250px;
-    height: 300px;
-}
+    height: 220px;
+
+  
+  }
 
 .mobile-titel{
-    height: 50px;
+    height: 150px;
 }
 
 .mobile-titel p , button{

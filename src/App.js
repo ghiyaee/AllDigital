@@ -14,6 +14,7 @@ import ListHdd from './components/ListHdd';
 import ListSdd from './components/ListSdd';
 import Sign from './components/Sign';
 import Login from './components/Login';
+import Footer from './components/Footer';
 const App = () => { 
   const [showMain, setShowMain] = useState(false)
 
@@ -27,12 +28,12 @@ const App = () => {
           </div>
         <Routes>
         <Route path='/' element={<div> {!showMain ? <Main /> : <Basket />}</div>  }/>
-          <Route path='/mobile' element={<ListMobile />} />
-          <Route path='/labtab' element={<ListLabtab />} />
-          <Route path='/tablet' element={<ListTablet />} />
-          <Route path='/Flash Memory' element={<ListFlash />} />
-           <Route path='/Hdd Disk' element={<ListHdd />} />
-          <Route path='/Sdd Disk' element={<ListSdd />} />
+          < Route path = '/mobile'element = { <div > < ListMobile />  <Footer/> </div>}/>
+          <Route path='/labtab' element={<div><ListLabtab /> <Footer/></div>} />
+          <Route path='/tablet' element={<div><ListTablet/> <Footer/></div>} />
+          <Route path='/Flash Memory' element={<div><ListFlash/> <Footer/></div>} />
+           <Route path='/Hdd Disk' element={<div><ListHdd/> <Footer/></div>} />
+          <Route path='/Sdd Disk' element={<div><ListSdd/> <Footer/></div>} />
           <Route path='/sign' element={<Sign/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/basket' element={<Basket/> } />

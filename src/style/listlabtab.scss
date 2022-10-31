@@ -11,23 +11,35 @@
    flex-wrap: wrap;
     gap: 2.5rem;
     .wrrap-labtab{
-    padding: 5rem;
+    // padding:2rem;
     display: flex;
     flex-direction: column;
-     width: 350px;
-     height: 400px;
+     width: 250px;
+    height: 350px;
+     margin: 3rem;
+     transition: all .5s;
+     cursor: pointer;
+    border-right: 3px solid rgb(249, 173, 173);
+     
+
    
  }
-  .wrrap-labtab .labtab-img {
-   width: 350px;
-    height: 400px;
+  .wrrap-labtab:hover{
+    transform: scale(1.2);
+     padding:1rem 2rem;
+   }
+   .labtab-img {
+   width: 200px;
+    height:150px;
+    // background: lightcoral;
+  
  }
- .wrrap-labtab .labtab-img img{
-    width: 100%;
+ .labtab-img img{
+  width: 100%;
  }
 
   .labtab-titel{
-    height: 60px;
+    height: 150px;
   
  }
 
