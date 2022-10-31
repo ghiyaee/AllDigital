@@ -20,6 +20,7 @@
   align-items: center;
   padding: 2rem;
   flex-wrap: wrap;
+  transition: all .5s;
 }
 .text {
   width: 200px;
@@ -87,4 +88,13 @@
 }
 .show{
   display: block;
+}
+
+@media (max-width:770px){
+  .counter{
+    border: 3px solid tomato;
+  }
+  .counter span {
+    color: #000;
+  }
 }
