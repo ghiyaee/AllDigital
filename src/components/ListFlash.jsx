@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { Context } from "../context";
-import "../style/listlabtab.scss";
+import "../style/listmobile.scss";
 const ListFlash = () => {
   const { state, dispatch } = useContext(Context);
   let { productFlash, card } = state;
@@ -14,11 +14,11 @@ const ListFlash = () => {
       }
     };
     return (
-      <div className="wrrap-labtab" key={item.id}>
-        <div className="labtab-img">
+      <div className="wrrap-mobile" key={item.id}>
+        <div className="img">
           <img src={item.img} alt="" />
         </div>
-        <div className="labtab-titel">
+        <div className="mobile-titel">
           <p>
             <span>Brand</span> {item.model}
           </p>
@@ -38,7 +38,7 @@ const ListFlash = () => {
   });
   return (
     <>
-      <div className="container-labtab">{render}</div>
+      <div className="container-mobile">{render}</div>
     </>
   );
 };

@@ -9,7 +9,7 @@ import { useState } from 'react';
 import ListMobile from './components/ListMobile';
 import ListLabtab from './components/ListLabtab';
 import ListTablet from './components/ListTablet';
-import ListFlash from './context/ListFlash';
+import ListFlash from './components/ListFlash';
 import ListHdd from './components/ListHdd';
 import ListSdd from './components/ListSdd';
 import Sign from './components/Sign';

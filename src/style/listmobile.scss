@@ -1,52 +1,60 @@
-@import '../style/variable/variable.scss';
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "../style/variable/variable.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container-mobile{
-    width:100%;
-    display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-    gap: 2.5rem;
-       text-align: center;
-  
-    .wrrap-mobile{
+.container-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  text-align: center;
+  padding: 2rem;
+  .wrrap-mobile {
+    width: 400px;
+    height: 550px;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 0px rgb(229, 184, 184);
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
-     width: 250px;
-    height: 350px;
-     margin: 3rem;
-     transition: all .5s;
-     cursor: pointer;
-    
-   }
-   .wrrap-mobile:hover{
-    transform: scale(1.2);
-     padding:1rem 2rem;
-       border-right: 3px solid rgb(249, 173, 173);
-   }
-  .mobile-img{
-   width: 250px;
-    height: 220px;
-
-  
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    .img {
+      width: 350px;
+      height: 300px;
+      cursor: pointer;
+      background:no-repeat center  ;
+      background-size: contain;
+      padding: 2rem;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .wrrap-mobile:hover {
+    box-shadow: 0 0 20px 0px rgb(55, 47, 47);
   }
 
-.mobile-titel{
+  .mobile-titel {
     height: 150px;
-}
+  }
 
-.mobile-titel p , button{
-    margin:0.3rem;
+  .mobile-titel p,
+  button {
+    margin: 0.3rem;
     font-weight: bold;
     font-size: 1.9rem;
-}
-.mobile-titel span{
+  }
+  .mobile-titel span {
     color: tomato;
-}
-button {
+  }
+  button {
     border: none;
     padding: $pading;
     cursor: pointer;

@@ -1,7 +1,7 @@
 
 import { useContext, useState } from "react";
 import { Context } from "../context";
-import '../style/listlabtab.scss'
+import "../style/listmobile.scss";
 const ListLabtab = () => {
   const { state, dispatch } = useContext(Context);
   let { productLabtab, card } = state;
@@ -15,11 +15,11 @@ const ListLabtab = () => {
       }
     };
     return (
-      <div className="wrrap-labtab" key={item.id}>
-        <div className="labtab-img">
+      <div className="wrrap-mobile" key={item.id}>
+        <div className="img">
           <img src={item.img} alt="" />
         </div>
-        <div className="labtab-titel">
+        <div className="mobile-titel">
           <p>
             <span>Brand</span> {item.model}
           </p>
@@ -39,7 +39,7 @@ const ListLabtab = () => {
   });
   return (
     <>
-      <div className="container-labtab">{render}</div>
+      <div className="container-mobile">{render}</div>
     </>
   );
 };
