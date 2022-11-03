@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { json, Link } from "react-router-dom";
 import '../style/sign.scss'
 const Sign = () => {
      const [user, setUser] = useState("");
@@ -9,6 +9,7 @@ const Sign = () => {
        if (user === "" || pass === "" || email === "") {
          return;
        } else {
+         localStorage.setItem("sign", JSON.stringify([user, pass, email]));
          setUser("");
          setPass("");
          setEmail("");

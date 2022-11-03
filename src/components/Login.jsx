@@ -1,17 +1,19 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const Login = () => {
-  const [emaill, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const loginHandel = () => {
-    // if (email == emaill.toLowerCase() && pass == password.toLowerCase()) {
+    const list = JSON.parse(localStorage.getItem("sign"));
+    if (email === list[2].toLowerCase() && password === list[1].toLowerCase()) {
+      setEmail('')
+      setPassword('')
+      console.log(list);
     //   login(user, active);
-    //   setEmail("");
-    //   setPassword("");
-    // } else {
-    //   return;
-    // }
+    } else {
+      return;
+    }
   };
   return (
     <>
@@ -26,7 +28,7 @@ const Login = () => {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            value={emaill}
+            value={email}
           />
           <input
             type="text"
