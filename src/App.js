@@ -27,7 +27,7 @@ const App = () => {
           <SearchBar sign={showMain } />
           </div>
         <Routes>
-        <Route path='/' element={<div> <Main />  <Basket /></div>  }/>
+        <Route path='/' element={<div> {!showMain? <Main /> : <Basket />}</div>  }/>
           < Route path = '/mobile'element = { <div > < ListMobile />  <Footer/> </div>}/>
           <Route path='/labtab' element={<div><ListLabtab /> <Footer/></div>} />
           <Route path='/tablet' element={<div><ListTablet/> <Footer/></div>} />
