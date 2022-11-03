@@ -16,7 +16,7 @@ const Navbar = ({ setShowMain }) => {
             <h1>All Digital</h1>
           </Link>
         </div>
-        <div>
+        <div className="bknav">
           <Link className="list-nav mobi" to="/mobile">
             Mobile
           </Link>
