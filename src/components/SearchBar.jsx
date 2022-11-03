@@ -5,6 +5,7 @@ import "../style/searchbar.scss";
 import Basket from "./Basket";
 const SearchBar = ({ sign, showMain }) => {
   console.log(sign);
+  const name = JSON.parse(localStorage.getItem("sign"));
   const { state, dispatch } = useContext(Context);
   let { productsMobile } = state;
   const searchHandel = (e) => {
@@ -27,7 +28,7 @@ const SearchBar = ({ sign, showMain }) => {
         </div>
         <div className="sign-buy">
           {sign ? "" : <Link to="/sign">SIGN UP/ </Link>}
-           {sign?'welcome': <Link to="/login">LOGIN</Link>}
+           {sign?`welcome ${name[0]}`: <Link to="/login">LOGIN</Link>}
           <Link to={"/basket"}>
             <i className="fa-sharp fa-solid fa-cart-shopping"></i>
           </Link>
