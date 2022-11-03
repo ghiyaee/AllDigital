@@ -5,7 +5,7 @@ import { Context } from "../context";
 import "../style/navbar.scss";
 import SidebarLeft from "./SidebarList";
 import { Link } from "react-router-dom";
-const Navbar = ({ setShowMain}) => {
+const Navbar = ({ setShowMain }) => {
   const { state, dispatch } = useContext(Context);
 
   return (
@@ -17,7 +17,7 @@ const Navbar = ({ setShowMain}) => {
           </Link>
         </div>
         <div>
-          <Link className="list-nav" to="/mobile">
+          <Link className="list-nav mobi" to="/mobile">
             Mobile
           </Link>
           <Link className="list-nav" to="/labtab">

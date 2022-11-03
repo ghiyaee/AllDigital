@@ -1,10 +1,14 @@
-import { useContext } from "react";
+import { useContext ,useState,useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../context";
 import "../style/searchbar.scss";
 import Basket from "./Basket";
-const SearchBar = ({ setShowMain }) => {
+const SearchBar = () => {
   const { state, dispatch } = useContext(Context);
+  let { productsMobile } = state;
+  const searchHandel = (e) => {
+    const newArr = productsMobile.filter(item => item.model.includes(e.target.value))
+  }
   return (
     <>
       <div className="searchbar">
@@ -14,11 +18,11 @@ const SearchBar = ({ setShowMain }) => {
               type="text"
               className="input-search"
               placeholder="Searchbar"
+              onChange={searchHandel}
             />
           </form>
         </div>
         <div className="sign-buy">
-          {/* <a href="#">Sign Up / Login</a> */}
           <Link to="/sign">SIGN UP/ </Link>
           <Link to="/login">LOGIN</Link>
           <Link to={"/basket"}>

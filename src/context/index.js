@@ -307,12 +307,11 @@ const reducer = (state, action) => {
              ...state,
              basket: state.basket + 1,
             }
-          case 'DecBasket':
-          return {
-              ...state,
-              basket: state.basket > 0 ? state.basket - 1 : '',
-          }
-       
+        case 'DecBasket':
+            return {
+                ...state,
+                basket: state.basket > 0 ? state.basket - 1 : '',
+            }
     
         default: return state
     }
