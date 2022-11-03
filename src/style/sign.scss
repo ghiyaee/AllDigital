@@ -5,20 +5,16 @@
     align-items: center;
     margin-top: 50px;
 }
-
-.login__logo{
-    display: flex;
-    align-items: center;
-}
-
 .login__sign{
     display: flex;
     flex-direction: column;
     width: 400px;
     text-align: center;
-    border: 2px solid #eee;
+    // border: 3px solid rgb(141, 137, 137);
+    box-shadow: 0 0 20px 0px rgb(55, 47, 47);
     padding: 30px;
     position: relative;
+    border-radius: 15px;
 }
 .close{
     position: absolute;
@@ -27,8 +23,15 @@
 }
 .login__sing p,button,input{
     padding: 10px;
-    margin: 10px;
+    margin: 15px;
     border-radius: 3px;
+}
+.login__sign input{
+    outline: none;
+    border: none;
+    border-left: 9px solid tomato;
+    border-bottom:3px solid tomato ;
+      border-radius: 15px;
 }
 .login__sign button{
     border: none;
@@ -43,6 +46,8 @@
 .login__btn__crt{
     font-family:'Italianno';
     font-size: 2.5rem;
+      background: tomato;
+      color: #eee;
 }
 .hiden{
     display: none;

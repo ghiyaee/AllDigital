@@ -16,7 +16,6 @@ const Login = () => {
   return (
     <>
       <div className={`login__container `}>
-        
         <div className="login__sign">
           <Link to={"/"}>
             <i className="close link large red icon "></i>
@@ -41,7 +40,7 @@ const Login = () => {
             Sign In
           </button>
           <p>Please a Create Account a Short Time</p>
-          <Link to="/">
+          <Link to="/sign">
             <button className="login__btn__crt">Create Account</button>
           </Link>
         </div>

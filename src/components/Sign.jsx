@@ -17,8 +17,6 @@ const Sign = () => {
     return(
     <>
       <div className={`login__container `}>
-        <div className="login__logo">
-        </div>
         <div className="login__sign">
           <Link to={"/"}>
             <i className="close link large red icon "></i>
