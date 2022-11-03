@@ -1,21 +1,22 @@
 import { useState } from "react";
 import { json, Link } from "react-router-dom";
 import '../style/sign.scss'
-const Sign = () => {
-     const [user, setUser] = useState("");
-     const [pass, setPass] = useState("");
-     const [email, setEmail] = useState("");
-     const regester = () => {
-       if (user === "" || pass === "" || email === "") {
-         return;
-       } else {
-         localStorage.setItem("sign", JSON.stringify([user, pass, email]));
-         setUser("");
-         setPass("");
-         setEmail("");
-       }
-     };
-    return(
+const Sign = ({ Sign }) => {
+  const [user, setUser] = useState("");
+  const [pass, setPass] = useState("");
+  const [email, setEmail] = useState("");
+  const regester = () => {
+    if (user === "" || pass === "" || email === "") {
+      return;
+    } else {
+      localStorage.setItem("sign", JSON.stringify([user, pass, email]));
+      setUser("");
+      setPass("");
+      setEmail("");
+      Sign(true)
+    }
+  };
+  return (
     <>
       <div className={`login__container `}>
         <div className="login__sign">
@@ -49,15 +50,15 @@ const Sign = () => {
           {/* <button className="login__btn__sin" onClick={loginHandel}>
               Sign In
             </button> */}
-            {/* <p>By Useing && Buying Please a Create Account a Short Time</p> */}
-            <Link to="/">
+          {/* <p>By Useing && Buying Please a Create Account a Short Time</p> */}
+          <Link to="/">
             <button className="login__btn__crt" onClick={regester}>
-            Create Account
-          </button>
-            </Link>
+              Create Account
+            </button>
+          </Link>
         </div>
       </div>
-        </>
-    )
-}
+    </>
+  );
+};
 export default Sign ;

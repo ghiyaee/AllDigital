@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-const Login = () => {
+const Login = ({ sign, showMain }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+   console.log(showMain);
   const loginHandel = () => {
     const list = JSON.parse(localStorage.getItem("sign"));
     if (email === list[2].toLowerCase() && password === list[1].toLowerCase()) {
-      setEmail('')
-      setPassword('')
+      setEmail("");
+      setPassword("");
       console.log(list);
-    //   login(user, active);
+      sign(false);
     } else {
       return;
     }
