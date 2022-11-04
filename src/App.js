@@ -17,6 +17,8 @@ import Login from './components/Login';
 import Footer from './components/Footer';
 const App = () => { 
   const [showMain, setShowMain] = useState(false)
+  const [lo,setlo]=useState(false)
+  const [si,setsi]=useState(false)
 
 
   return (
@@ -24,7 +26,7 @@ const App = () => {
       <Router>
           < div className = 'fixed' >
           <Navbar />
-          <SearchBar sign={showMain } />
+          <SearchBar si={si } lo={lo} />
           </div>
         <Routes>
         <Route path='/' element={<div> {!showMain? <Main /> : <Basket />}</div>  }/>
@@ -34,8 +36,8 @@ const App = () => {
           <Route path='/Flash Memory' element={<div><ListFlash/> <Footer/></div>} />
            <Route path='/Hdd Disk' element={<div><ListHdd/> <Footer/></div>} />
           <Route path='/Sdd Disk' element={<div><ListSdd/> <Footer/></div>} />
-          <Route path='/sign' element={!showMain ? <Sign Sign={setShowMain } />:''} />
-          <Route path='/login' element={ !showMain ?<Login Sign={setShowMain }/>:''} />
+          <Route path='/sign' element={!si ? <Sign si={setsi } />:''} />
+          <Route path='/login' element={!lo ? <Login lo={setlo} si={setsi } />: <Main/>} />
           <Route path='/basket' element={<Basket/> } />
         </Routes>
         
