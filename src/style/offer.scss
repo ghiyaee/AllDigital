@@ -50,6 +50,8 @@
     margin: 1rem;
     flex-wrap: wrap;
     margin-top: 6rem;
+    border-right: 3px solid #eee;
+    border-top: 3px solid #eee;
   }
   .img-offer {
     width: 300px;
@@ -93,7 +95,7 @@
   .arrows{
     font-weight: bold;
     font-size: 3rem;
-    animation: anima  3s linear .5s infinite alternate ;
+    animation: anima  1.3s linear .5s infinite alternate ;
     color: tomato;
   }
   @keyframes anima{

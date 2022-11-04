@@ -27,7 +27,7 @@ const SearchBar = ({ si,lo, showMain }) => {
         </div>
         <div className="sign-buy">
           {si ? "" : <Link to="/sign">SIGN UP/ </Link>}
-           {lo ? `welcome ${name[0]} `: <Link to="/login">LOGIN</Link>}
+           {lo ? `welcome: ${name[0]} `: <Link to="/login">LOGIN</Link>}
           <Link to={"/basket"}>
             <i className="fa-sharp fa-solid fa-cart-shopping"></i>
           </Link>
