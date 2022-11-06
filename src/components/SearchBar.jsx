@@ -15,7 +15,7 @@ const SearchBar = ({ si,lo, showMain }) => {
   return (
     <>
       <div className="searchbar">
-        <div className="form">
+        {/* <div className="form">
           <form action="">
             <input
               type="text"
@@ -24,7 +24,7 @@ const SearchBar = ({ si,lo, showMain }) => {
               onChange={searchHandel}
             />
           </form>
-        </div>
+        </div> */}
         <div className="sign-buy">
           {si ? "" : <Link to="/sign">SIGN UP/ </Link>}
            {lo ? `welcome: ${name[0]} `: <Link to="/login">LOGIN</Link>}
