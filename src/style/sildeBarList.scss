@@ -6,11 +6,9 @@
   width:320px;
   max-height: 100vh;
   padding: 3rem;
-  background: $bkgroundH;
+  background: #fff;
   z-index:999;
   overflow-y: scroll;
-  transition: all .6s ease-in-out;
-  color: #fff;
 }
 .Sidehiden {
   transform: translateX(-1000px);
@@ -20,8 +18,7 @@
 }
 .sidebarLeft ul ul{
   list-style: none;
-  color: $color;
-
+ 
 }
 
 .list {
@@ -29,11 +26,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+   
 }
 
 .trans .ul li {
   font-size: $font;
-  color: $bkcolor;
+  color: rgb(3, 25, 194);
   cursor: pointer;
 }
 
@@ -43,6 +41,7 @@
 }
 .show {
   display: block;
+ 
 }
 ::-webkit-scrollbar {
   width: 3px;
