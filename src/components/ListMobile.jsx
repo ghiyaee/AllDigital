@@ -18,10 +18,8 @@ const ListMobile = () => {
    
     return (
       <div className="wrrap-mobile" key={item.id}>
-        
         <div className="img">
           <img src={item.img} alt="" />
-       
         </div>
         <div className="mobile-titel">
           <p>
@@ -34,6 +32,13 @@ const ListMobile = () => {
             <span>Ram</span> {item.ram}
           </p>
 
+          <p>
+            {Array(item.star)
+              .fill()
+              .map((_, i) => (
+                <i className="fa-solid fa-star "></i>
+              ))}
+          </p>
           <button onClick={() => addHandel(item)}>Add To Basket</button>
         </div>
       </div>

@@ -85,28 +85,28 @@ const initail = {
         //     id: 1, model: 'appel 14 pro', ram: 256, price: 1500, img: img17_slider, count: 0
         //     },
         {
-            id: 2,model: 'samsung ', ram:128,price: 3000,img: img10_slider, count: 0},
+            id: 2,model: 'samsung ', ram:128,price: 3000,img: img10_slider, count: 0,star:5},
         {
-            id: 3,model: 'appel 12 ', ram:128,price: 500,img: img1_slider, count: 0},
+            id: 3,model: 'appel 12 ', ram:128,price: 500,img: img1_slider, count: 0,star:4},
         {
-            id: 4,model: 'xiaomi ', ram:64,price: 1500,img: img11_slider, count: 0},
+            id: 4,model: 'xiaomi ', ram:64,price: 1500,img: img11_slider, count: 0,star:4},
         {
-            id: 5,model: 'motorola', ram:128,price: 2000,img: img12_slider, count: 0},
+            id: 5,model: 'motorola', ram:128,price: 2000,img: img12_slider, count: 0,star:5},
         {
-             id: 6, model: ' motorola', ram:64, price: 3300, img: img13_slider, count: 0
+             id: 6, model: ' motorola', ram:64, price: 3300, img: img13_slider, count: 0,star:5
          },
-           {id: 7,model: 'appel 14', ram:256,price: 1000,img: img18_slider, count: 0},
+           {id: 7,model: 'appel 14', ram:256,price: 1000,img: img18_slider, count: 0,star:5},
         {
-            id: 8,model: 'google 7 ', ram:128,price: 3000,img: img19_slider, count: 0},
+            id: 8,model: 'google 7 ', ram:128,price: 3000,img: img19_slider, count: 0,star:4},
         {
-            id: 9, model: 'google 7 pro ', ram: 128, price: 500, img: img20_slider, count: 0
+            id: 9, model: 'google 7 pro ', ram: 128, price: 500, img: img20_slider, count: 0,star:5
             },
         {
-            id: 10,model: 'samsung flip ', ram:64,price: 1500,img: img21_slider, count: 0},
+            id: 10,model: 'samsung flip ', ram:64,price: 1500,img: img21_slider, count: 0,star:5},
         {
-            id: 11,model: 'samsung fold', ram:128,price: 2000,img: img22_slider, count: 0},
+            id: 11,model: 'samsung fold', ram:128,price: 2000,img: img22_slider, count: 0,star:4},
         {
-             id: 12, model: ' xioami 12', ram:64, price: 3300, img: img23_slider, count: 0
+             id: 12, model: ' xioami 12', ram:64, price: 3300, img: img23_slider, count: 0,star:3
          },
     ],
     productLabtab: [

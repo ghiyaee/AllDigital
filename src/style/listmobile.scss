@@ -42,7 +42,7 @@
   }
 
   .mobile-titel {
-    height: 150px;
+    height: 250px;
   }
 
   .mobile-titel p,
@@ -64,5 +64,8 @@
   button:hover {
     background: $backgroundb;
     color: $bkcolor;
+  }
+  .fa-star{
+    color:$bkcolor
   }
 }
