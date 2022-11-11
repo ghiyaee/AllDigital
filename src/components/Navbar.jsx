@@ -12,12 +12,12 @@ const Navbar = ({ setShowMain,search }) => {
     <>
       <div className="navbar">
         <div className="logo">
-          <Link className="logo-nav" to={"/"} onClick={()=>dispatch('SerachOff')}>
+          <Link className="logo-nav" to={"/"} onClick={()=>dispatch('SearchOff')}>
             <h1>All Digital</h1>
           </Link>
         </div>
-        <div className="bknav" onClick={()=> dispatch("SerachOn")}>
-          <Link className="list-nav mobi" to="/mobile">
+        <div className="bknav" >
+          <Link className="list-nav mobi" to="/mobile" onClick={()=> dispatch("SearchOn")}>
             Mobile
           </Link>
           <Link className="list-nav" to="/labtab">

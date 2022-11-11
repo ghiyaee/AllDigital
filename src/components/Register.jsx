@@ -1,21 +1,19 @@
-import { useContext ,useState,useEffect} from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../context";
 import "../style/searchbar.scss";
-import Basket from "./Basket";
-const Register = ({ sign,login, showMain,search }) => {
+const Register = ({ sign, login }) => {
   const name = JSON.parse(localStorage.getItem("sign"));
   const { state, dispatch } = useContext(Context);
-  let { productsMobile,searchbar } = state;
+  let { searchbar } = state;
   const searchHandel = (e) => {
-    const newArr = productsMobile.filter((item) =>
-      item.model.includes(e.target.value)
-    );
+    dispatch({ type: "SRCMO", payload: e.target.value });
+     dispatch({ type: "SRCLB", payload: e.target.value });
   };
   return (
     <>
       <div className="searchbar">
-        <div className={`form ${searchbar}`} >
+        <div className={`form ${searchbar}`}>
           <form action="">
             <input
               type="text"
@@ -27,7 +25,7 @@ const Register = ({ sign,login, showMain,search }) => {
         </div>
         <div className="sign-buy">
           {sign ? "" : <Link to="/sign">SIGN UP/ </Link>}
-           {login ? `welcome: ${name[0]} `: <Link to="/login">LOGIN</Link>}
+          {login ? `welcome: ${name[0]} ` : <Link to="/login">LOGIN</Link>}
           <Link to={"/basket"}>
             <i className="fa-sharp fa-solid fa-cart-shopping"></i>
           </Link>

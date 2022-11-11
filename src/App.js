@@ -20,15 +20,14 @@ const App = () => {
   const [showMain, setShowMain] = useState(false)
   const [login,setlo]=useState(false)
   const [sign,setsi]=useState(false)
-  const [search,setSearch]=useState(false)
+  
 
   return (
     <div className="App">   
       <Router>
           < div className = 'fixed'  >
           <Navbar  />
-       
-          <Register srch={search} sign={sign } login={login} />
+          <Register sign={sign } login={login} />
           </div>
         <Routes>
         <Route path='/' element={<div> {!showMain? <Main /> : <Basket />}</div>  }/>
