@@ -5,10 +5,14 @@ import "../style/searchbar.scss";
 const Register = ({ sign, login }) => {
   const name = JSON.parse(localStorage.getItem("sign"));
   const { state, dispatch } = useContext(Context);
-  let { searchbar } = state;
+  let { searchbar, basket } = state;
   const searchHandel = (e) => {
     dispatch({ type: "SRCMO", payload: e.target.value });
-     dispatch({ type: "SRCLB", payload: e.target.value });
+    dispatch({ type: "SRCLB", payload: e.target.value });
+    dispatch({ type: "SRCTB", payload: e.target.value });
+    dispatch({ type: "SRCFL", payload: e.target.value });
+    dispatch({ type: "SRCHD", payload: e.target.value });
+    dispatch({ type: "SRCSD", payload: e.target.value });
   };
   return (
     <>
@@ -29,7 +33,7 @@ const Register = ({ sign, login }) => {
           <Link to={"/basket"}>
             <i className="fa-sharp fa-solid fa-cart-shopping"></i>
           </Link>
-          <span className="count-baslet">{state.basket}</span>
+          <span className="count-baslet">{basket}</span>
         </div>
       </div>
     </>

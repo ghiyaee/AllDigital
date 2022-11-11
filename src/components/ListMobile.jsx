@@ -6,7 +6,6 @@ import "../style/listmobile.scss";
 const ListMobile = () => {
   const { state, dispatch } = useContext(Context);
   let { productsMobile, card, } = state;
-  const [add, setAdd] = useState([]);
   const render = productsMobile.map((item, ind) => {
     const addHandel = (item) => {
       if (card.indexOf(item) === -1) {

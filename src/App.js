@@ -17,9 +17,9 @@ import Login from './components/Login';
 import Footer from './components/Footer';
 import Search from './components/Search';
 const App = () => { 
-  const [showMain, setShowMain] = useState(false)
-  const [login,setlo]=useState(false)
-  const [sign,setsi]=useState(false)
+  const [showMain] = useState(false)
+  const [login,setlogin]=useState(false)
+  const [sign,setsign]=useState(false)
   
 
   return (
@@ -37,29 +37,14 @@ const App = () => {
           <Route path='/Flash Memory' element={<div><ListFlash/> <Footer/></div>} />
            <Route path='/Hdd Disk' element={<div><ListHdd/> <Footer/></div>} />
           <Route path='/Sdd Disk' element={<div><ListSdd/> <Footer/></div>} />
-          <Route path='/sign' element={!sign ? <Sign sign={setsi } />:''} />
-          <Route path='/login' element={!login ? <Login login={setlo} sign={setsi } />: <Main/>} />
+          <Route path='/sign' element={!sign ? <Sign sign={setsign } />:''} />
+          <Route path='/login' element={!login ? <Login login={setlogin} sign={setsign } />: <Main/>} />
           <Route path='/basket' element={<Basket/> } />
         </Routes>
         
      </Router>
-      {/* <Router>
-         <Routes>
-          <Route path='/' element={<Navbar/> }/>
-          <Route path='/mobile' element={<ListMobile />} />
-          <Route path='/labtab' element={ <ListLabtab/>} />
-      </Routes>
-      </Router> */}
+     
     </div> 
   )
 }
 export default  App;
-
-
-  //  <PerProvider>
-  //             <div className='fixed'>
-  //             <Nabnar setShowMain={setShowMain} />
-  //               <Register setShowMain={setShowMain} />
-  //             </div>
-  //             {!showMain ? <Main /> : <Basket />}
-  //           </PerProvider> }/>

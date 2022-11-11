@@ -626,12 +626,12 @@ const reducer = (state, action) => {
     case "SearchOn":
       return {
         ...state,
-        searchbar: (state.searchbar = "showbar"),
+        searchbar:action.payload = "showbar",
       };
     case "SearchOff":
       return {
         ...state,
-        searchbar: (state.searchbar = "hidenbar"),
+        searchbar:action.payload = "hidenbar",
       };
     case "SRCMO":
       return {
@@ -650,6 +650,42 @@ const reducer = (state, action) => {
               item.model.includes(action.payload)
             )
           : initail.productLabtab,
+      };
+    case "SRCTB":
+      return {
+        ...state,
+        productTablet: action.payload
+          ? initail.productTablet.filter((item) =>
+              item.model.includes(action.payload)
+            )
+          : initail.productTablet,
+      };
+    case "SRCFL":
+      return {
+        ...state,
+        productFlash: action.payload
+          ? initail.productFlash.filter((item) =>
+              item.model.includes(action.payload)
+            )
+          : initail.productFlash,
+      };
+    case "SRCHD":
+      return {
+        ...state,
+        productHard: action.payload
+          ? initail.productHard.filter((item) =>
+              item.model.includes(action.payload)
+            )
+          : initail.productHard,
+      };
+    case "SRCSD":
+      return {
+        ...state,
+        productSdd: action.payload
+          ? initail.productSdd.filter((item) =>
+              item.model.includes(action.payload)
+            )
+          : initail.productSdd,
       };
 
     default:

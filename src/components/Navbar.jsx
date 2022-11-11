@@ -5,19 +5,27 @@ import { Context } from "../context";
 import "../style/navbar.scss";
 import SidebarLeft from "./SidebarList";
 import { Link } from "react-router-dom";
-const Navbar = ({ setShowMain,search }) => {
+const Navbar = () => {
   const { state, dispatch } = useContext(Context);
-
+  const {searchbar}=state
   return (
     <>
       <div className="navbar">
         <div className="logo">
-          <Link className="logo-nav" to={"/"} onClick={()=>dispatch('SearchOff')}>
+          <Link
+            className="logo-nav"
+            to={"/"}
+            onClick={() => dispatch({ type: "SearchOff" ,payload:searchbar})}
+          >
             <h1>All Digital</h1>
           </Link>
         </div>
-        <div className="bknav" >
-          <Link className="list-nav mobi" to="/mobile" onClick={()=> dispatch("SearchOn")}>
+        <div className="bknav">
+          <Link
+            className="list-nav mobi"
+            to="/mobile"
+            onClick={() => dispatch({ type: "SearchOn", payload: searchbar })}
+          >
             Mobile
           </Link>
           <Link className="list-nav" to="/labtab">

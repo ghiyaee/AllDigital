@@ -47,10 +47,6 @@ const Sign = ({si }) => {
             }}
             value={email}
           />
-          {/* <button className="login__btn__sin" onClick={loginHandel}>
-              Sign In
-            </button> */}
-          {/* <p>By Useing && Buying Please a Create Account a Short Time</p> */}
           <Link to="/">
             <button className="login__btn__crt" onClick={regester}>
               Create Account
