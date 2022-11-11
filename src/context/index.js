@@ -51,6 +51,7 @@ const initail = {
     showHdd: 'actv',
     showSdd: 'actv',
     upper: 'hidenUp',
+    searchbar:'hidenbar',
     basket: 0,
     showCrad:false,
     card:[],
@@ -312,6 +313,16 @@ const reducer = (state, action) => {
                 ...state,
                 basket: state.basket > 0 ? state.basket - 1 : '',
             }
+        case 'SerachOn':
+            return {
+                ...state,
+                 searchbar: state.searchbar = 'showbar'
+            }
+         case 'SerachOff':
+         return {
+             ...state,
+             searchbar: state.searchbar = 'hidenbar'
+         }
     
         default: return state
     }

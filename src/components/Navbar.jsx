@@ -5,18 +5,18 @@ import { Context } from "../context";
 import "../style/navbar.scss";
 import SidebarLeft from "./SidebarList";
 import { Link } from "react-router-dom";
-const Navbar = ({ setShowMain }) => {
+const Navbar = ({ setShowMain,search }) => {
   const { state, dispatch } = useContext(Context);
 
   return (
     <>
       <div className="navbar">
         <div className="logo">
-          <Link className="logo-nav" to={"/"}>
+          <Link className="logo-nav" to={"/"} onClick={()=>dispatch('SerachOff')}>
             <h1>All Digital</h1>
           </Link>
         </div>
-        <div className="bknav">
+        <div className="bknav" onClick={()=> dispatch("SerachOn")}>
           <Link className="list-nav mobi" to="/mobile">
             Mobile
           </Link>

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { Context } from "../context";
 import "../style/searchbar.scss";
 import Basket from "./Basket";
-const SearchBar = ({ si,lo, showMain }) => {
+const Register = ({ sign,login, showMain,search }) => {
   const name = JSON.parse(localStorage.getItem("sign"));
   const { state, dispatch } = useContext(Context);
-  let { productsMobile } = state;
+  let { productsMobile,searchbar } = state;
   const searchHandel = (e) => {
     const newArr = productsMobile.filter((item) =>
       item.model.includes(e.target.value)
@@ -15,7 +15,7 @@ const SearchBar = ({ si,lo, showMain }) => {
   return (
     <>
       <div className="searchbar">
-        {/* <div className="form">
+        <div className={`form ${searchbar}`} >
           <form action="">
             <input
               type="text"
@@ -24,10 +24,10 @@ const SearchBar = ({ si,lo, showMain }) => {
               onChange={searchHandel}
             />
           </form>
-        </div> */}
+        </div>
         <div className="sign-buy">
-          {si ? "" : <Link to="/sign">SIGN UP/ </Link>}
-           {lo ? `welcome: ${name[0]} `: <Link to="/login">LOGIN</Link>}
+          {sign ? "" : <Link to="/sign">SIGN UP/ </Link>}
+           {login ? `welcome: ${name[0]} `: <Link to="/login">LOGIN</Link>}
           <Link to={"/basket"}>
             <i className="fa-sharp fa-solid fa-cart-shopping"></i>
           </Link>
@@ -38,4 +38,4 @@ const SearchBar = ({ si,lo, showMain }) => {
   );
 };
 
-export default SearchBar;
+export default Register;
