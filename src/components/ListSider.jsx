@@ -25,14 +25,20 @@ const ListSlider = () => {
     <>
       <div className="container-list">
         {renderlist}
-        <div className="arrow-leftL" onClick={() => dispatch("GoToPervList")}>
+        <div
+          className="arrow-leftL"
+          onClick={() => dispatch({ type: "GoToPervList" })}
+        >
           {counter1 === 0 ? (
             <div className="arrow hiden">{`<`}</div>
           ) : (
             <div className="arrowLeft">{`<`}</div>
           )}
         </div>
-        <div className="arrow-rightL" onClick={() => dispatch("GoToNextList")}>
+        <div
+          className="arrow-rightL"
+          onClick={() => dispatch({ type: "GoToNextList" })}
+        >
           {counter1 === -2700 ? (
             <div className="arrow hiden">{`<`}</div>
           ) : (

@@ -48,7 +48,7 @@ const Offer = () => {
       if (card.indexOf(item) === -1) {
         item.count ++
        card.push(item)
-        dispatch("Basket")
+        dispatch({ type: "Basket" });
         
     }
   }

@@ -48,9 +48,9 @@ const Main = () => {
   useEffect(() => {
      window.addEventListener("scroll", () => {
        if (window.scrollY > 300) {
-         dispatch("Upper");
+         dispatch({ type: "Upper" });
        } else {
-         dispatch("Down");
+         dispatch({ type: "Down" });
        }
      });
   })

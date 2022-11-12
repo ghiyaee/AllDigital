@@ -26,7 +26,7 @@ const App = () => {
     <div className="App">   
       <Router>
           < div className = 'fixed'  >
-          <Navbar  />
+          <Navbar/>
           <Register sign={sign } login={login} />
           </div>
         <Routes>

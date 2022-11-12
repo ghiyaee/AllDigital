@@ -15,7 +15,7 @@ const Navbar = () => {
           <Link
             className="logo-nav"
             to={"/"}
-            onClick={() => dispatch({ type: "SearchOff" ,payload:searchbar})}
+            onClick={() => dispatch({ type: "SearchOff", payload: searchbar })}
           >
             <h1>All Digital</h1>
           </Link>
@@ -47,13 +47,13 @@ const Navbar = () => {
         <button className="btn-menu">
           <div>
             <i
-              onClick={() => dispatch("SHOW")}
+              onClick={() => dispatch({ type: "SHOW" })}
               className={`fa-solid fa-bars ${state.openMenu}`}
             ></i>
           </div>
           <div>
             <i
-              onClick={() => dispatch("HIDEN")}
+              onClick={() => dispatch({ type: "HIDEN" })}
               className={`fa-solid fa-xmark ${state.closeMenu}`}
             ></i>
           </div>

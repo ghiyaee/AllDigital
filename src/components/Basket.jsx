@@ -30,7 +30,7 @@ const Basket = () => {
     const arr = filter.filter((i) => i.id != index.id);
     setFelter(arr)
     card.pop(...arr)
-    dispatch("DecBasket");
+    dispatch({ type: "DecBasket" });
   }
   useEffect(() => {
     totalHandel();
