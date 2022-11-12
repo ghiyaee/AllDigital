@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Context } from "../context";
 import "../style/sildeBarList.scss";
+import { Link } from "react-router-dom";
 const SidebarList = () => {
     const { state, dispatch } = useContext(Context);
     return (
@@ -10,24 +11,26 @@ const SidebarList = () => {
             className="list "
             onClick={() =>
               state.showMobile === "actv"
-                ? dispatch("MOBILE")
-                : dispatch("DMOBILE")
+                ? dispatch({ type: "MOBILE" })
+                : dispatch({ type: "DMOBILE" })
             }
           >
-            <h3> Mobile</h3>
+            <Link to="/mobile" className="link" >
+              <h3> Mobile</h3>
+            </Link>
             <i
               className={`fa-solid opacty fa-${
                 state.showMobile === "actv" ? "plus" : "minus"
               }`}
             ></i>
           </li>
-          <ul className={` ul ${state.showMobile }`}>
-            <li >Appel</li>
-            <li >Samsung</li>
-            <li >Lg</li>
-            <li >Xiaomi</li>
-            <li >Motorola</li>
-          </ul>
+          {/* <ul className={` ul ${state.showMobile}`}>
+            <li>Appel</li>
+            <li>Samsung</li>
+            <li>Lg</li>
+            <li>Xiaomi</li>
+            <li>Motorola</li>
+          </ul> */}
 
           <li
             className="list"
@@ -37,7 +40,9 @@ const SidebarList = () => {
                 : dispatch("DLABTAB")
             }
           >
-            <h3>Labtab</h3>
+            <Link to="/labtab" className="link">
+              <h3>Labtab</h3>
+            </Link>
             <i
               className={`fa-solid opacty fa-${
                 state.showLabtab === "actv" ? "plus" : "minus"
@@ -59,7 +64,9 @@ const SidebarList = () => {
                 : dispatch("DFLASH")
             }
           >
-            <h3> Flash</h3>
+            <Link to="/Flash Memory" className="link">
+              <h3> Flash</h3>
+            </Link>
             <i
               className={`fa-solid opacty fa-${
                 state.showFlash === "actv" ? "plus" : "minus"
@@ -79,7 +86,9 @@ const SidebarList = () => {
               state.showHdd === "actv" ? dispatch("HDD") : dispatch("DHDD")
             }
           >
-            <h3> Hdd</h3>
+            <Link to="/Hdd Disk" className="link">
+              <h3> Hdd</h3>
+            </Link>
             <i
               className={`fa-solid opacty fa-${
                 state.showHdd === "actv" ? "plus" : "minus"
@@ -98,7 +107,9 @@ const SidebarList = () => {
               state.showSdd === "actv" ? dispatch("SDD") : dispatch("DSDD")
             }
           >
-            <h3> Sdd</h3>
+            <Link to="/Sdd Disk" className="link">
+              <h3> Sdd</h3>
+            </Link>
             <i
               className={`fa-solid opacty fa-${
                 state.showSdd === "actv" ? "plus" : "minus"
