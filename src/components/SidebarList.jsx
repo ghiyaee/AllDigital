@@ -19,6 +19,7 @@ const SidebarList = () => {
               to="/mobile"
               className="link"
               onClick={() => dispatch({ type: "HIDEN" })}
+              // onClick={() => dispatch({ type: "showbar" })}
             >
               <h3> Mobile</h3>
             </Link>
@@ -35,7 +36,7 @@ const SidebarList = () => {
             <Link
               to="/labtab"
               className="link"
-              onClick={() => dispatch({ type: "HIDEN" })}
+              onClick={() => dispatch({ type: "HIDEN" }) }
             >
               <h3>Labtab</h3>
             </Link>

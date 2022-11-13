@@ -519,6 +519,7 @@ const reducer = (state, action) => {
         closeMenu: (state.closeMenu = "closeMenu"),
         openMenu: (state.openMenu = "openMenu"),
         filtrMenu: (state.filtrMenu = ""),
+        searchbar: (state.searchbar = "showbar"),
       };
     case "MOBILE":
       return {
