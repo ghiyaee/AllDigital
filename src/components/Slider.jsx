@@ -64,7 +64,7 @@ const Slider = () => {
     <>
       <div className="wrrap" style={bk}>
         <div className="imgStyle" style={slide}></div>
-        <div className="wrrap-mobile">
+        <div className="wrrap-slide">
           <div className="text">
             {text()}
             <Link to={`/${imgSlider[counter].model}`}>
