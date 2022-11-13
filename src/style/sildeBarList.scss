@@ -9,12 +9,14 @@
   background: #fff;
   z-index:999;
   overflow-y: scroll;
+  border-top: 3px solid #eee;
+  transition: all .9s;
 }
 .Sidehiden {
-  transform: translateX(-1000px);
+  transform: translateY(-1000px);
 }
 .SidehidenShow {
-  transform: translateX(0px);
+  transform: translateY(0px);
 }
 .sidebarLeft ul ul{
   list-style: none;
@@ -61,6 +63,6 @@
 }
 @media( min-width:700px){
  .sidebarLeft{
-  transform: translateX(-2000px);
+  transform: translateY(-2000px);
  }
 }
