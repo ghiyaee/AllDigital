@@ -3,10 +3,11 @@
   position: relative;
   max-width: 100%;
   height: 500px;
-  margin: $margin;
+  // margin: $margin;
   display: flex;
   align-items: center;
-  
+  // justify-content: center;
+  margin: 0rem auto;
 
   .imgStyle {
     width: 50%;
@@ -86,11 +87,15 @@
 
 @media (max-width: 600px) {
   .wrrap {
-    flex-direction: column;
+    // flex-direction: column;
+    // width: 90%;
+    height: 300px;
+  // justify-content: center;
+   
   }
   .wrrap-mobile {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
   }
   .text {
     margin-bottom: 5rem;
