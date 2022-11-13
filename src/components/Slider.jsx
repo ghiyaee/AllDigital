@@ -54,7 +54,7 @@ const Slider = () => {
   }
   useEffect(() => {
     const reset = setInterval(() => {
-      dispatch("GoToNext");
+      dispatch({ type: "GoToNext" });
     }, 7000);
     return () => {
       clearInterval(reset);

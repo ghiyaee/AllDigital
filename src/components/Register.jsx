@@ -7,12 +7,12 @@ const Register = ({ sign, login }) => {
   const { state, dispatch } = useContext(Context);
   let { searchbar, basket } = state;
   const searchHandel = (e) => {
-    dispatch({ type: "SRCMO", payload: e.target.value });
-    dispatch({ type: "SRCLB", payload: e.target.value });
-    dispatch({ type: "SRCTB", payload: e.target.value });
-    dispatch({ type: "SRCFL", payload: e.target.value });
-    dispatch({ type: "SRCHD", payload: e.target.value });
-    dispatch({ type: "SRCSD", payload: e.target.value });
+    dispatch({ type: "SRCMO", payload: e.target.value.toLowerCase() });
+    dispatch({ type: "SRCLB", payload: e.target.value.toLowerCase() });
+    dispatch({ type: "SRCTB", payload: e.target.value.toLowerCase() });
+    dispatch({ type: "SRCFL", payload: e.target.value.toLowerCase() });
+    dispatch({ type: "SRCHD", payload: e.target.value.toLowerCase() });
+    dispatch({ type: "SRCSD", payload: e.target.value.toLowerCase() });
   };
   return (
     <>
