@@ -23,7 +23,7 @@ const SidebarList = () => {
             >
               <h3> Mobile</h3>
             </Link>
-            <i class="fa-solid fa-arrow-left"></i>
+            <i className="fa-solid fa-arrow-left"></i>
           </li>
           <li
             className="list"
@@ -40,7 +40,7 @@ const SidebarList = () => {
             >
               <h3>Labtab</h3>
             </Link>
-            <i class="fa-solid fa-arrow-left"></i>
+            <i className="fa-solid fa-arrow-left"></i>
           </li>
 
           <li
@@ -58,7 +58,7 @@ const SidebarList = () => {
             >
               <h3> Flash</h3>
             </Link>
-            <i class="fa-solid fa-arrow-left"></i>
+            <i className="fa-solid fa-arrow-left"></i>
           </li>
 
           <li
@@ -74,7 +74,7 @@ const SidebarList = () => {
             >
               <h3> Hdd</h3>
             </Link>
-            <i class="fa-solid fa-arrow-left"></i>
+            <i className="fa-solid fa-arrow-left"></i>
           </li>
 
           <li
@@ -90,7 +90,7 @@ const SidebarList = () => {
             >
               <h3> Sdd</h3>
             </Link>
-            <i class="fa-solid fa-arrow-left"></i>
+            <i className="fa-solid fa-arrow-left"></i>
           </li>
         </ul>
       </div>

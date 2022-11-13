@@ -45,10 +45,13 @@
     font-size: $font;
     margin: $margin;
     font-weight: 900;
+
+    margin-left: 2rem;
   }
   p {
     font-size: $font;
     margin: $margin;
+    margin-left: 2rem;
   }
   button {
     border: none;
@@ -57,6 +60,7 @@
     cursor: pointer;
     margin: $margin;
     border-radius: 7px;
+     margin-left: 2rem;
   }
   button:hover {
     background: $backgroundb;

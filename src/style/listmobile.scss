@@ -12,17 +12,19 @@
   gap: 2.5rem;
   text-align: center;
   padding: 2rem;
+   background: rgb(26, 100, 179);
   .wrrap-mobile {
     width: 400px;
     height: 550px;
     transition: all 0.5s;
-    box-shadow: 0 0 10px 0px rgb(229, 184, 184);
+    // box-shadow: 0 0 10px 0px rgb(229, 184, 184);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
+   
     .img {
       width: 350px;
       height: 300px;
@@ -38,8 +40,8 @@
     }
   }
   .wrrap-mobile:hover {
-    box-shadow: 0 0 20px 0px rgb(55, 47, 47);
-    background: rgb(214, 225, 244)
+    box-shadow: 0 0 30px 0px yellow;
+    // background: rgb(214, 225, 244)
   }
 
   .mobile-titel {
