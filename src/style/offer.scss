@@ -45,7 +45,7 @@
     background: $backgroundO;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: space-around;
     margin: 1rem;
     flex-wrap: wrap;
@@ -106,4 +106,7 @@
 }
 
 @media (max-width: 600px) {
+   .cradOffer{
+    flex-direction: row;
+   }
 }
