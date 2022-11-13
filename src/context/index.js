@@ -24,7 +24,7 @@ import img19_slider from "../img/googel 7.png";
 import img20_slider from "../img/googel 7p.png";
 import img21_slider from "../img/sam flip.png";
 import img22_slider from "../img/fold.png";
-import img23_slider from "../img/xio 12.png";
+import img23_slider from "../img/fold.png";
 import img24_slider from "../img/lab.jpeg";
 import img25_slider from "../img/lab1.jpeg";
 import img26_slider from "../img/lab2.jpeg";
