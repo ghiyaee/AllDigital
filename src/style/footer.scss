@@ -27,15 +27,20 @@
     border-radius: 10px;
     position: relative;
     background: $backgroundl;
-    margin: 3rem;
+    margin: 5rem;
   }
    .imgser{
-      width: 90px;
-      height: 90px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       position: absolute;
-      top:-4%;
+      top:-12%;
       left:35%;
+      background: rgb(244, 244, 244);
+      // background: rgb(6, 67, 111);
+      // border: 5px solid yellow;
+      box-shadow: 0 0 30px 5px rgb(26, 26, 26);
+      
    }
 
 .footer-header-li p{
