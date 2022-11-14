@@ -14,6 +14,7 @@ const Footer = () => {
       <div className="footer-info">
         <ul className="footer-header-ul">
           <li className="footer-header-li">
+            <h2>salary</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
               incidunt fuga quas totam officia maiores ipsum dolor reiciendis
@@ -24,6 +25,7 @@ const Footer = () => {
             </p>
           </li>
           <li className="footer-header-li">
+            <h2>support</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
               incidunt fuga quas totam officia maiores ipsum dolor reiciendis
@@ -34,6 +36,7 @@ const Footer = () => {
             </p>
           </li>
           <li className="footer-header-li">
+            <h2>about us</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
               incidunt fuga quas totam officia maiores ipsum dolor reiciendis
