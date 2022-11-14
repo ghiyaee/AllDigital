@@ -6,10 +6,14 @@ const Footer = () => {
   const { imgfooter } = state;
   return (
     <div className="container-footer">
+      {/* <div className="imgser">
+        <img className="imgser" src={imgfooter[0]} alt="" />
+        <img className="imgser" src={imgfooter[1]} alt="" />
+        <img className="imgser" src={imgfooter[2]} alt="" />
+      </div> */}
       <div className="footer-info">
         <ul className="footer-header-ul">
           <li className="footer-header-li">
-            <img className="imgser" src={imgfooter[0]} alt="" />
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
               incidunt fuga quas totam officia maiores ipsum dolor reiciendis
@@ -20,7 +24,6 @@ const Footer = () => {
             </p>
           </li>
           <li className="footer-header-li">
-            <img className="imgser" src={imgfooter[1]} alt="" />
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
               incidunt fuga quas totam officia maiores ipsum dolor reiciendis
@@ -31,7 +34,6 @@ const Footer = () => {
             </p>
           </li>
           <li className="footer-header-li">
-            <img className="imgser" src={imgfooter[2]} alt="" />
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
               incidunt fuga quas totam officia maiores ipsum dolor reiciendis
