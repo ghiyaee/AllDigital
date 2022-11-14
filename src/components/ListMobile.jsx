@@ -5,7 +5,7 @@ import { Context } from "../context";
 import "../style/listmobile.scss";
 const ListMobile = () => {
   const { state, dispatch } = useContext(Context);
-  let { productsMobile, card, } = state;
+  let { productsMobile, card} = state;
   const render = productsMobile.map((item, ind) => {
     const addHandel = (item) => {
       if (card.indexOf(item) === -1) {
@@ -14,7 +14,7 @@ const ListMobile = () => {
         dispatch({ type: "Basket" });
       }
     };
-   
+ 
     return (
       <div className="wrrap-mobile" key={item.id}>
         <div className="img">
@@ -45,7 +45,9 @@ const ListMobile = () => {
   });
   return (
     <>
-      <div className="container-mobile">{render}</div>
+      <div className="container-mobile">
+        {render}
+      </div>
     </>
   );
 };
