@@ -22,7 +22,7 @@ const Register = ({ sign, login }) => {
             <input
               type="text"
               className="input-search"
-              placeholder="Searchbar"
+              placeholder="searchbar"
               onChange={searchHandel}
             />
           </form>
