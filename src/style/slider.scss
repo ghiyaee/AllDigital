@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0rem auto;
+  // margin: 0rem auto;
 
   .imgStyle {
     width: 50%;
@@ -17,8 +17,9 @@
     background-repeat: no-repeat;
     transition: all 0.6s ease-in-out;
   }
-  .wrrap-slide{
+  .wrrapslide{
     width: 50%;
+    height: 50%;
   }
   .text {
     width: 100%;
@@ -49,12 +50,12 @@
     margin: $margin;
     font-weight: 900;
 
-    margin-left: 2rem;
+    // margin-left: 2rem;
   }
   p {
     font-size: $font;
     margin: $margin;
-    margin-left: 2rem;
+    // margin-left: 2rem;
   }
   button {
     border: none;
@@ -95,13 +96,14 @@
 
 @media (max-width: 600px) {
   .wrrap {
-    height: 300px;
+    height:500px;
+    flex-direction: column;
    
   }
    .text h2,p {
-    font-size: 2rem;
-    margin: $margin;
-    font-weight: 900;
+    // font-size: 2rem;
+    // margin: $margin;
+    // font-weight: 900;
   }
   .text button{
     padding: $pading;
@@ -117,6 +119,6 @@
 }
  
   .text {
-    margin-bottom: 5rem;
+    // margin-bottom: 5rem;
   }
 }
