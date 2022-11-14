@@ -19,7 +19,7 @@
     color: #fff;
      margin-top: 5rem;
      flex-wrap: wrap;
-     gap: 2rem;
+    //  gap: 2rem;
   }
   .footer-info .footer-header-li {
     width:320px;
@@ -29,12 +29,12 @@
     background: $backgroundl;
     margin: 3rem;
   }
-   img{
+   .imgser{
       width: 90px;
       height: 90px;
       border-radius: 50%;
       position: absolute;
-      top:-10%;
+      top:-4%;
       left:35%;
    }
 
