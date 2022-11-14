@@ -8,21 +8,21 @@
     justify-content: space-around;
     padding: 8rem;
     flex-wrap: wrap;
-}
-.mobile{
-    width:20rem;
-    height: 20rem;
-    border-radius: 50%;
-    background: #f56d6d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
-    cursor: pointer;
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit:cover;
+    .mobile{
+        width:20rem;
+        height: 20rem;
+        // border-radius: 50%;
+        // background: #f56d6d;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        margin: 1rem;
+        cursor: pointer;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit:contain;
+        }
     }
 }
  
