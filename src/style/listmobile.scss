@@ -15,15 +15,15 @@
    background: rgb(26, 100, 179);
   .wrrap-mobile {
     width: 400px;
-    height: 550px;
+    height: 450px;
     transition: all 0.5s;
     // box-shadow: 0 0 10px 0px rgb(229, 184, 184);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    // padding: 2rem;
    
     .img {
       width: 350px;
@@ -45,12 +45,12 @@
   }
 
   .mobile-titel {
-    height: 250px;
+    // height: 200px;
   }
 
   .mobile-titel p,
   button {
-    margin: 0.3rem;
+    // margin: 0.3rem;
     font-weight: bold;
     font-size: 1.9rem;
   }
@@ -63,6 +63,7 @@
     cursor: pointer;
     border-radius: 7px;
     background: #eee;
+    margin-top: 5px;
   }
   button:hover {
     background: $backgroundb;
