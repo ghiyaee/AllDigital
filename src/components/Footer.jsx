@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import { Context } from "../context";
 import "../style/footer.scss";
 const Footer = () => {
-  const{state}=useContext(Context)
+  const { state } = useContext(Context);
   const { imgfooter } = state;
   return (
     <div className="container-footer">
@@ -50,18 +50,12 @@ const Footer = () => {
       </div>
       <div className="footer-contact">
         <span>Contact Us :</span>
-        <span>
+        <div className="silderSocail">
           <i className="fa-brands fa-telegram"></i>
-        </span>
-        <span>
           <i className="fa-brands fa-whatsapp"></i>
-        </span>
-        <span>
           <i className="fa-brands fa-instagram"></i>
-        </span>
-        <span>
           <i className="fa-regular fa-envelope"></i>
-        </span>
+        </div>
       </div>
       <span className="copyright">&copy;2022 allDigitall</span>
     </div>

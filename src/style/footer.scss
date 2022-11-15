@@ -44,12 +44,17 @@
 
   .footer-contact {
     display: flex;
+    // width: 50px;
+    // height: 50px;
   }
-  .footer-contact span {
+  .footer-contact i{
+    cursor: pointer;
+  }
+  .footer-contact span,i {
     margin: 0.5rem;
     color: #fff;
-    padding: 3rem 1rem;
-    cursor: pointer;
+    padding: 3rem .5rem;
+    font-size: 3rem;
   }
   .copyright {
     text-align: center;
