@@ -2,15 +2,34 @@ import { useContext, useState, useEffect } from "react";
 import { Context } from "../context";
 import "../style/footer.scss";
 const Footer = () => {
-  const { state } = useContext(Context);
-  const { imgfooter } = state;
+  const { state ,dispatch} = useContext(Context);
+  const { imgfooter, soail,counter2 } = state;
+  const render = () => {
+    if (counter2 === 0) {
+      return <i className={`fa-brands fa-${soail[counter2]}`}></i>;
+    } else if (counter2 === 1) {
+      return <i className={`fa-brands fa-${soail[counter2]}`}></i>;
+    } else if (counter2 === 2) {
+      return <i className={`fa-brands fa-${soail[counter2]}`}></i>;
+    } else if (counter2 === 3) {
+      return <i className={`fa-regular fa-${soail[counter2]}`}></i>;
+    }
+} 
+ 
+ useEffect(() => {
+   const reset = setInterval(() => {
+     dispatch({ type: "GoToSoail" });
+   }, 2000);
+   return () => {
+     clearInterval(reset);
+   };
+ }, [counter2]);
+
+
+
+
   return (
     <div className="container-footer">
-      {/* <div className="imgser">
-       
-        <img className="imgser" src={imgfooter[1]} alt="" />
-        <img className="imgser" src={imgfooter[2]} alt="" />
-      </div> */}
       <div className="footer-info">
         <ul className="footer-header-ul">
           <li className="footer-header-li">
@@ -59,11 +78,13 @@ const Footer = () => {
       </div>
       <div className="footer-contact">
         <span>Contact Us :</span>
-        <div className="silderSocail">
-          <i className="fa-brands fa-telegram"></i>
-          <i className="fa-brands fa-whatsapp"></i>
-          <i className="fa-brands fa-instagram"></i>
-          <i className="fa-regular fa-envelope"></i>
+        <div className="sildercho">
+          <div className="silderSocail">
+            {render()}
+            {/* <i className={soail[1]}></i>
+            <i className={soail[2]}></i>
+            <i className={soail[3]}></i> */}
+          </div>
         </div>
       </div>
       <span className="copyright">&copy;2022 allDigitall</span>

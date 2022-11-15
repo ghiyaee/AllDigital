@@ -55,6 +55,12 @@ const initail = {
   basket: 0,
   showCrad: false,
   card: [],
+  soail: [
+    "telegram",
+    "whatsapp",
+    "instagram",
+    "envelope",
+  ],
   backcolor: [
     "linear-gradient(130deg,#f9f8f3, blue 130% )",
     "linear-gradient(130deg,#f9f8f3, gray 130%)",
@@ -500,6 +506,7 @@ const initail = {
   ],
   counter: 0,
   counter1: 0,
+  counter2: 0,
 };
 
 const reducer = (state, action) => {
@@ -627,12 +634,12 @@ const reducer = (state, action) => {
     case "SearchOn":
       return {
         ...state,
-        searchbar:action.payload = "showbar",
+        searchbar: (action.payload = "showbar"),
       };
     case "SearchOff":
       return {
         ...state,
-        searchbar:action.payload = "hidenbar",
+        searchbar: (action.payload = "hidenbar"),
       };
     case "SRCMO":
       return {
@@ -688,7 +695,14 @@ const reducer = (state, action) => {
             )
           : initail.productSdd,
       };
-
+    case "GoToSoail":
+      return {
+        ...state,
+        counter2:
+          state.counter2 < state.soail.length - 1
+            ? state.counter2 + 1
+            : (state.counter2 = 0),
+      };
     default:
       return state;
   }
