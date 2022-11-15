@@ -8,7 +8,7 @@ const Footer = () => {
     if (counter2 === 0) {
       return <i className={`fa-brands fa-${soail[counter2]}`}></i>;
     } else if (counter2 === 1) {
-      return <i className={`fa-brands fa-${soail[counter2]}`}></i>;
+      return <i className={`fa-brands fa-${soail[counter2]}`} ></i>;
     } else if (counter2 === 2) {
       return <i className={`fa-brands fa-${soail[counter2]}`}></i>;
     } else if (counter2 === 3) {
@@ -19,7 +19,7 @@ const Footer = () => {
  useEffect(() => {
    const reset = setInterval(() => {
      dispatch({ type: "GoToSoail" });
-   }, 2000);
+   }, 3000);
    return () => {
      clearInterval(reset);
    };

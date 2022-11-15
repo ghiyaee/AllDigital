@@ -58,15 +58,19 @@
   }
   .sildercho{
   overflow: hidden;
-  width: 45px;
+  width: 63px;
   height: 45px;
   } 
   .silderSocail{
     display: flex;
-    transform: translateX(0px);
+    // transform: translateX(0px);
     transition: all .5s;
+     animation: anima  1.3s linear .5s infinite alternate ;
   }
- 
+   @keyframes anima{
+   from{ transform: translate(0px)};
+   to{transform: translate(25px);}
+}
   
   .footer-contact i{
     cursor: pointer;
