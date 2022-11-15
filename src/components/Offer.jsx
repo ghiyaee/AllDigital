@@ -54,10 +54,10 @@ const Offer = () => {
   }
         return (
           <div className="cradOffer" key={item.id}>
+            <div className="offer-text">
+              <p>OFFER%</p>
+            </div>
             <div className="img-offer">
-              <div className="offer-text">
-                <p>OFFER%</p>
-              </div>
               <div className="imgoffer">
                 <img src={item.img} alt="" />
               </div>
