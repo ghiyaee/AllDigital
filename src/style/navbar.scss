@@ -38,10 +38,9 @@ html {
     border-bottom: $boderbottom;
     transition: $trans;
     font-family: $font-logo;
+    
   }
   .list-nav:hover {
-    animation-name: animi;
-    animation-duration: .5s;
     border-radius: 10px;
     color: tomato;
     background: #eee;
