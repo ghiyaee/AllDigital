@@ -27,6 +27,16 @@
     border-radius: 10px;
     background: $backgroundl;
     margin: 2rem;
+    .headfooter{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      img{
+        width: 120px;
+        height: 120px;
+        margin-top: -3rem;
+      }
+    }
    h2{
     font-weight: bold;
     font-size: 3rem;
