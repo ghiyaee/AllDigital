@@ -24,6 +24,7 @@
     justify-content: space-between;
     align-items: center;
     // padding: 2rem;
+     box-shadow: 0 0 10px 0px yellow;
    
     .img {
       width: 290px;
@@ -40,7 +41,7 @@
     }
   }
   .wrrap-mobile:hover {
-    box-shadow: 0 0 30px 0px yellow;
+   
     // background: rgb(214, 225, 244)
   }
 
@@ -66,8 +67,8 @@
     margin-top: 5px;
   }
   button:hover {
-    background: $backgroundb;
-    color: $bkcolor;
+    background: yellow;
+    color: blue;
   }
   .fa-star{
     color:$bkcolor
