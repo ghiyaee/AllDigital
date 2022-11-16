@@ -18,11 +18,12 @@
     transition: all 0.6s ease-in-out;
   }
   .wrrapslide{
-    width: 50%;
-    height: 50%;
+    width: 55%;
+    height:40%;
   }
   .text {
     width: 100%;
+    text-align: center;
   }
   .arrow-left {
     color: $bkcolor;
@@ -96,14 +97,15 @@
 
 @media (max-width: 600px) {
   .wrrap {
-    height:500px;
+    height:300px;
     flex-direction: column;
    
   }
-   .text h2,p {
-    // font-size: 2rem;
-    // margin: $margin;
-    // font-weight: 900;
+  .text h2{
+    font-size:2.5rem;
+  }
+   .text p {
+    display: none;
   }
   .text button{
     padding: $pading;
