@@ -78,6 +78,9 @@ html {
 }
 
 @media (max-width: 770px) {
+  .navbar{
+    height: 60px;
+  }
   .openMenu {
     display: $displayShow;
   }
