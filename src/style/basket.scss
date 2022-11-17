@@ -9,7 +9,7 @@
   padding: 2rem;
 }
 .container-basket {
-  width: 50vw;
+  width: 40vw;
   margin: 2rem auto;
   border-radius: 13px;
   background: $backgroundO;
@@ -18,36 +18,38 @@
 }
 .wrrap-basket {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   flex-wrap: wrap;
-  transition: all .5s;
 }
-.text {
-  width: 200px;
+
+.offer-img{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
 }
-.text p{
-   font-size: 2.9rem;
-  font-weight: bold;
+.offer-img img{
+  width: 100%;
 }
-.sumitem {
+.sumitem{
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  flex-direction: column;
   flex-wrap: wrap;
 }
+
 .sumitem p {
-  font-size: 2.9rem;
+  font-size: 1.9rem;
   font-weight: bold;
 }
 .counter {
   border: 3px solid #eee;
-  padding: 0.5rem;
+  // padding: 0.5rem;
   border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: .5rem;
 }
 .counter .click,.trash{
   cursor: pointer;
@@ -55,7 +57,7 @@
 .counter span {
   margin: 1rem;
   color: tomato;
-  font-size: 2.9rem;
+  font-size: 1.9rem;
   font-weight: bold;
 }
 .total {
@@ -92,11 +94,24 @@
   display: block;
 }
 
-@media (max-width:770px){
+@media (max-width:768px){
   .counter{
     border: 3px solid tomato;
   }
   .counter span {
     color: #000;
   }
+  .offer-img{
+  display: flex;
+  justify-content: center;
+}
+  .offer-img img{
+  width: 50%;
+}
+
+ .offer-img{
+  width: 300px;
+  height: 150px;
+}
+
 }

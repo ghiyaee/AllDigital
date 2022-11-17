@@ -40,18 +40,18 @@ const Basket = () => {
   const render = filter.map((item) => {
     return (
       <div className="container-basket" key={item.id}>
-        <div className="wrrap-basket" >
-          <div>
-            <div>
+        <div className="wrrap-basket">
+          <div className="basimg">
+            <div className="offer-img">
               <img src={item.img} alt="imageProduct" />
             </div>
+          </div>
+          <div className="sumitem">
             <div className="text">
               <p>{item.model}</p>
               <p>${item.price}</p>
             </div>
-          </div>
-          <div className="sumitem">
-            <p>sum item :$ {(subTotal = item.price * item.count)}</p>
+            <p> this item sum:$ {(subTotal = item.price * item.count)}</p>
             <div className="counter">
               <span className="click" onClick={() => addHandel(item)}>
                 +
@@ -64,7 +64,10 @@ const Basket = () => {
                 -
               </span>
               <span className={`${item.count > 1 ? "hiden" : "show"}`}>
-                <i onClick={()=> deleHandel(item)} className="fa-solid fa-trash-can trash "></i>
+                <i
+                  onClick={() => deleHandel(item)}
+                  className="fa-solid fa-trash-can trash "
+                ></i>
               </span>
             </div>
           </div>
