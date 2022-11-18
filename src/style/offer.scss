@@ -17,9 +17,8 @@
   background: rgba(44, 57, 171);
   border-radius: 15px;
   .offer-text {
-    // transform: rotate(-45deg);
   }
-  .offer-text p  {
+  .offer-text p {
     font-size: 4rem;
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
       0 0 32px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 15px #0fa;
@@ -38,7 +37,7 @@
       text-shadow: none;
     }
   }
- 
+
   .cradOffer {
     width: 350px;
     height: 350px;
@@ -49,7 +48,7 @@
     justify-content: space-around;
     margin: 1rem;
     flex-wrap: wrap;
- 
+
     border-right: 3px solid #eee;
     border-top: 3px solid #eee;
   }
@@ -88,25 +87,27 @@
   .buying-offer {
     cursor: pointer;
     display: flex;
-    gap:3rem;
+    gap: 3rem;
     align-items: center;
-
   }
-  .arrows{
+  .arrows {
     font-weight: bold;
     font-size: 3rem;
-    animation: anima  1.3s linear .5s infinite alternate ;
+    animation: anima 1.3s linear 0.5s infinite alternate;
     color: tomato;
   }
-  @keyframes anima{
-   from{ transform: translate(0px)};
-   to{transform: translate(25px);}
-}
-
+  @keyframes anima {
+    from {
+      transform: translate(0px);
+    }
+    to {
+      transform: translate(25px);
+    }
+  }
 }
 
 @media (max-width: 600px) {
-   .cradOffer{
+  .cradOffer {
     flex-direction: row;
-   }
+  }
 }

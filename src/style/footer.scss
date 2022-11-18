@@ -10,9 +10,7 @@
   background: $bkgroundH;
   display: flex;
   flex-direction: column;
- .imgser {
-  
-    
+  .imgser {
   }
   .footer-info .footer-header-ul {
     list-style: none;
@@ -27,60 +25,61 @@
     border-radius: 10px;
     background: $backgroundl;
     margin: 2rem;
-    .headfooter{
+    .headfooter {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      img{
+      img {
         width: 120px;
         height: 120px;
         margin-top: -3rem;
       }
     }
-   h2{
-    font-weight: bold;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-   }
+    h2 {
+      font-weight: bold;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
   }
 
-  
   .footer-header-li p {
     font-size: 2rem;
     font-weight: bold;
     color: $bkcolor;
   }
 
-
   .footer-contact {
     display: flex;
     justify-content: center;
   }
-  .sildercho{
-  overflow: hidden;
-  width: 63px;
-  height: 45px;
-  } 
-  .silderSocail{
-    display: flex;
-    // transform: translateX(0px);
-    transition: all .5s;
-     animation: anima  1.3s linear .5s infinite alternate ;
+  .sildercho {
+    overflow: hidden;
+    width: 63px;
+    height: 45px;
   }
-   @keyframes anima{
-   from{ transform: translate(0px)};
-   to{transform: translate(25px);}
-}
-  
-  .footer-contact i{
+  .silderSocail {
+    display: flex;
+    transition: all 0.5s;
+    animation: anima 1.3s linear 0.5s infinite alternate;
+  }
+  @keyframes anima {
+    from {
+      transform: translate(0px);
+    }
+    to {
+      transform: translate(25px);
+    }
+  }
+
+  .footer-contact i {
     cursor: pointer;
   }
-  .footer-contact span,i {
+  .footer-contact span,
+  i {
     margin: 0.5rem;
     color: #fff;
-    padding: 0rem .1rem;
+    padding: 0rem 0.1rem;
     font-size: 3rem;
-    
   }
   .copyright {
     text-align: center;
