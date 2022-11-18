@@ -12,31 +12,28 @@
   gap: 2.5rem;
   text-align: center;
   padding: 2rem;
-   background: rgb(26, 100, 179);
+  background: rgb(26, 100, 179);
   .wrrap-mobile {
     width: 300px;
     height: 400px;
     transition: all 0.5s;
-    // box-shadow: 0 0 10px 0px rgb(229, 184, 184);
+
     border-radius: 12px;
     display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
+
     align-items: center;
-    // padding: 2rem;
-     box-shadow: 0 0 10px 0px yellow;
-   
+
+    box-shadow: 0 0 10px 0px yellow;
+
     .img {
       width: 290px;
       height: 300px;
       cursor: pointer;
-      background:no-repeat center  ;
+      background: no-repeat center;
       background-size: contain;
-      // padding: 2rem;
       position: relative;
       overflow: hidden;
       display: flex;
-      // align-items: center;
       justify-content: center;
     }
     img {
@@ -46,32 +43,26 @@
     }
   }
   .wrrap-mobile:hover {
-   
-    // background: rgb(214, 225, 244)
   }
 
   .mobile-titel {
-  // display: none;
-  position: absolute;
-  top:100px;
-  transform: translateY(300px);
-  transition: all .5s;
-  background :rgba(10, 10, 10, 0.6);
-  padding: 2rem;
-  border-radius: 15px;
-
-
+    position: absolute;
+    top: 100px;
+    transform: translateY(300px);
+    transition: all 0.5s;
+    background: rgba(10, 10, 10, 0.6);
+    padding: 2rem;
+    border-radius: 15px;
   }
-   .wrrap-mobile:hover .mobile-titel {
-     transform: translateY(0px);
+  .wrrap-mobile:hover .mobile-titel {
+    transform: translateY(0px);
   }
 
   .mobile-titel p,
   button {
-    // margin: 0.3rem;
     font-weight: bold;
     font-size: 1.9rem;
-    color:#fff
+    color: #fff;
   }
   .mobile-titel span {
     color: tomato;
@@ -89,11 +80,10 @@
     background: yellow;
     color: blue;
   }
-  .fa-star{
-    color:$bkcolor
+  .fa-star {
+    color: $bkcolor;
   }
 }
 
-@media (max-width:500px){
- 
+@media (max-width: 500px) {
 }

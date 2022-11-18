@@ -11,7 +11,6 @@
    flex-wrap: wrap;
     gap: 2.5rem;
     .wrrap-labtab{
-    // padding:2rem;
     display: flex;
     flex-direction: column;
      width: 250px;
@@ -24,14 +23,10 @@
 
    
  }
-  .wrrap-labtab:hover{
-    // transform: scale(1.2);
-    //  padding:1rem 2rem;
-   }
+ 
    .labtab-img {
    width: 200px;
     height:150px;
-    // background: lightcoral;
   
  }
  .labtab-img img{

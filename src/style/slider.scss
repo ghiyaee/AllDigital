@@ -6,20 +6,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin: 0rem auto;
 
   .imgStyle {
     width: 50%;
-    height:50%;
+    height: 50%;
     border-radius: 10px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     transition: all 0.6s ease-in-out;
   }
-  .wrrapslide{
+  .wrrapslide {
     width: 55%;
-    height:40%;
+    height: 40%;
   }
   .text {
     width: 100%;
@@ -50,13 +49,10 @@
     font-size: $font;
     margin: $margin;
     font-weight: 900;
-
-    // margin-left: 2rem;
   }
   p {
     font-size: $font;
     margin: $margin;
-    // margin-left: 2rem;
   }
   button {
     border: none;
@@ -65,7 +61,7 @@
     cursor: pointer;
     margin: $margin;
     border-radius: 7px;
-     margin-left: 2rem;
+    margin-left: 2rem;
   }
   button:hover {
     background: $backgroundb;
@@ -82,45 +78,40 @@
 .arrowR {
   width: 50px;
   height: 50px;
-  // border: 1px solid #eee;
-  // color: #777;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  // background-color: rgb(240, 238, 238);
   font-size: 3.5rem;
   font-weight: bold;
-   background: $backgroundb;
-    color: yellow;
+  background: $backgroundb;
+  color: yellow;
 }
 
 @media (max-width: 600px) {
   .wrrap {
-    height:300px;
+    height: 300px;
     flex-direction: column;
-   
   }
-  .text h2{
-    font-size:2.5rem;
+  .text h2 {
+    font-size: 2.5rem;
   }
-   .text p {
+  .text p {
     display: none;
   }
-  .text button{
+  .text button {
     padding: $pading;
     font-size: 2rem;
   }
   .arrowL,
-.arrowR {
-  width: 30px;
-  height: 30px;
-}
-.arrow{
-  right: 2rem;
-}
- 
+  .arrowR {
+    width: 30px;
+    height: 30px;
+  }
+  .arrow {
+    right: 2rem;
+  }
+
   .text {
-    // margin-bottom: 5rem;
   }
 }
