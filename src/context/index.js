@@ -56,7 +56,7 @@ const initail = {
   showCrad: false,
   card: [],
   soail: [
-    "telegram",
+    "telegram ",
     "whatsapp",
     "instagram",
     "envelope",

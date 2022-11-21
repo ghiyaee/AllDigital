@@ -58,14 +58,14 @@ const Navbar = () => {
             to="/Hdd Disk"
             onClick={() => dispatch({ type: "SearchOn", payload: searchbar })}
           >
-            Hard ext
+            Hard 
           </Link>
           <Link
             className="list-nav"
             to="/Sdd Disk"
             onClick={() => dispatch({ type: "SearchOn", payload: searchbar })}
           >
-            Hard sdd
+             sdd
           </Link>
         </div>
 
