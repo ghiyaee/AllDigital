@@ -5,9 +5,12 @@ import { Context } from "../context";
 import "../style/navbar.scss";
 import SidebarLeft from "./SidebarList";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const { state, dispatch } = useContext(Context);
-  const {searchbar}=state
+  const { searchbar } = state;
+  const [nav, setNav] = useState();
+
   return (
     <>
       <div className="navbar">
@@ -25,9 +28,10 @@ const Navbar = () => {
             className="list-nav mobi"
             to="/mobile"
             onClick={() => dispatch({ type: "SearchOn", payload: searchbar })}
-          >
+   >
             Mobile
           </Link>
+
           <Link className="list-nav" to="/labtab">
             Labtab
           </Link>
@@ -44,6 +48,8 @@ const Navbar = () => {
             Hard sdd
           </Link>
         </div>
+       
+        
         <button className="btn-menu">
           <div>
             <i
