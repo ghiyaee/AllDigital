@@ -28,28 +28,47 @@ const Navbar = () => {
             className="list-nav mobi"
             to="/mobile"
             onClick={() => dispatch({ type: "SearchOn", payload: searchbar })}
-   >
+          >
             Mobile
           </Link>
 
-          <Link className="list-nav" to="/labtab">
+          <Link
+            className="list-nav"
+            to="/labtab"
+            onClick={() => dispatch({ type: "SearchOn", payload: searchbar })}
+          >
             Labtab
           </Link>
-          <Link className="list-nav" to="/tablet">
+          <Link
+            className="list-nav"
+            to="/tablet"
+            onClick={() => dispatch({ type: "SearchOn", payload: searchbar })}
+          >
             Tablet
           </Link>
-          <Link className="list-nav" to="/Flash Memory">
+          <Link
+            className="list-nav"
+            to="/Flash Memory"
+            onClick={() => dispatch({ type: "SearchOn", payload: searchbar })}
+          >
             Flash
           </Link>
-          <Link className="list-nav" to="/Hdd Disk">
+          <Link
+            className="list-nav"
+            to="/Hdd Disk"
+            onClick={() => dispatch({ type: "SearchOn", payload: searchbar })}
+          >
             Hard ext
           </Link>
-          <Link className="list-nav" to="/Sdd Disk">
+          <Link
+            className="list-nav"
+            to="/Sdd Disk"
+            onClick={() => dispatch({ type: "SearchOn", payload: searchbar })}
+          >
             Hard sdd
           </Link>
         </div>
-       
-        
+
         <button className="btn-menu">
           <div>
             <i
