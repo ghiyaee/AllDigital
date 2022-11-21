@@ -68,10 +68,10 @@ html {
 
   @keyframes animi {
     from {
-      transform: translatey(0px);
+      transform: translateX(0px);
     }
     to {
-      transform: translatey(10px);
+      transform: translateX(-10px);
     }
   }
 
