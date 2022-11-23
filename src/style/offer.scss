@@ -16,8 +16,42 @@
   flex-wrap: wrap;
   background: rgba(44, 57, 171);
   border-radius: 15px;
-  .offer-text {
-  }
+ .img-offer{
+  position: relative;
+ }
+ .order{
+  position: absolute;
+  top:40%;
+  left:11.5%;
+  background: yellow;
+  padding: 1rem 1.5rem;
+  border-radius: 7px;
+  color: blue;
+ }
+  .order1{
+  position: absolute;
+  top:40%;
+  left:44%;
+  background: yellow;
+  padding: 1rem 1.5rem;
+  border-radius: 7px;
+  color: blue;
+ }
+  .order2{
+  position: absolute;
+  top:40%;
+  left:77%;
+  background: yellow;
+  padding: 1rem 1.5rem;
+  border-radius: 7px;
+  color: blue;
+ }
+ .hiden-order{
+  display: none;
+ }
+ .show-order{
+  display: block;
+ }
   .offer-text p {
     font-size: 4rem;
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
