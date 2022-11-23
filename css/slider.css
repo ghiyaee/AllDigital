@@ -1,0 +1,112 @@
+.wrrap {
+  position: relative;
+  max-width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrrap .imgStyle {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.6s ease-in-out;
+}
+.wrrap .wrrapslide {
+  width: 55%;
+  height: 40%;
+}
+.wrrap .text {
+  width: 100%;
+  text-align: center;
+}
+.wrrap .arrow-left {
+  color: #f1c918;
+  cursor: pointer;
+  font-size: 3.5rem;
+  padding: 0.5rem;
+  display: none;
+}
+.wrrap .arrow-right {
+  color: #f1c918;
+  cursor: pointer;
+  font-size: 3.5rem;
+  padding: 0.5rem;
+  display: none;
+}
+.wrrap .arrow {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.wrrap h2 {
+  font-size: 3.5rem;
+  margin: 1rem;
+  font-weight: 900;
+}
+.wrrap p {
+  font-size: 3.5rem;
+  margin: 1rem;
+}
+.wrrap button {
+  border: none;
+  padding: 1rem;
+  font-size: 3.5rem;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 7px;
+  margin-left: 2rem;
+}
+.wrrap button:hover {
+  background: linear-gradient(10deg, blue, #f9f8f3 165%);
+  color: yellow;
+}
+
+.wrrap:hover .arrow-left,
+.wrrap:hover .arrow-right {
+  display: block;
+}
+
+.arrowL,
+.arrowR {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: linear-gradient(10deg, blue, #f9f8f3 165%);
+  color: yellow;
+}
+
+@media (max-width: 600px) {
+  .wrrap {
+    height: 300px;
+    flex-direction: column;
+  }
+  .text h2 {
+    font-size: 2.5rem;
+  }
+  .text p {
+    display: none;
+  }
+  .text button {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .arrowL,
+.arrowR {
+    width: 30px;
+    height: 30px;
+  }
+  .arrow {
+    right: 2rem;
+  }
+}/*# sourceMappingURL=slider.css.map */

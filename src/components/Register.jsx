@@ -6,6 +6,12 @@ const Register = ({ sign, login }) => {
   const name = JSON.parse(localStorage.getItem("sign"));
   const { state, dispatch } = useContext(Context);
   let { searchbar, basket } = state;
+  const scrollup = () => {
+    window.scroll({
+      top: 0,
+      behavior:'smooth'
+    })
+  }
   const searchHandel = (e) => {
     dispatch({ type: "SRCMO", payload: e.target.value.toLowerCase() });
     dispatch({ type: "SRCLB", payload: e.target.value.toLowerCase() });
@@ -30,7 +36,7 @@ const Register = ({ sign, login }) => {
         <div className="sign-buy">
           {sign ? "" : <Link to="/sign">SIGN UP/ </Link>}
           {login ? `welcome: ${name[0]} ` : <Link to="/login">LOGIN</Link>}
-          <Link to={"/basket"}>
+          <Link to={"/basket"} onClick={scrollup}>
             <i className="fa-sharp fa-solid fa-cart-shopping"></i>
           </Link>
           <span className="count-baslet">{basket}</span>

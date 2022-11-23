@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.searchbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 3px solid rgb(243, 241, 241);
+  background: #fff;
+  justify-content: flex-end;
+}
+.searchbar .form {
+  flex: 4;
+  margin: 1rem;
+}
+.searchbar .hidenbar {
+  display: none;
+}
+.searchbar .showbar {
+  display: block;
+}
+.searchbar .input-search {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background: rgb(224, 222, 222);
+  border-radius: 7px;
+  outline: none;
+  font-size: 3rem;
+}
+.searchbar .sign-buy {
+  padding: 0.5rem;
+  font-size: 3.5rem;
+  margin: 1rem;
+  border: 3px solid rgb(243, 241, 241);
+  border-radius: 7px;
+  position: relative;
+}
+.searchbar .sign-buy a {
+  text-decoration: none;
+  color: rgb(109, 106, 106);
+}
+.searchbar .sign-buy i {
+  margin-left: 3rem;
+  color: rgb(109, 106, 106);
+  font-size: 3rem;
+}
+.searchbar .count-baslet {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: tomato;
+  background: #fff;
+  font-size: 2.5rem;
+  z-index: 100;
+}
+@media (max-width: 600px) {
+  .searchbar .input-search,
+.searchbar .sign-buy {
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=searchbar.css.map */

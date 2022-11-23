@@ -8,7 +8,7 @@ const Basket = () => {
    let { card } = state;
   let [countPluse, setCountPluse] = useState([]);
   const [total, setTOtal] = useState();
-  const [filter,setFelter]=useState(card)
+  const [filter, setFelter] = useState(card)
   const addHandel = (item) => {
     const ind = filter.indexOf(item);
     const arr = filter;
@@ -39,7 +39,7 @@ const Basket = () => {
   const style={ backgroundImage: `url(${img}) ` }
   const render = filter.map((item) => {
     return (
-      <div className="container-basket" key={item.id}>
+      <div className="container-basket" key={item.id} >
         <div className="wrrap-basket">
           <div className="basimg">
             <div className="offer-img">

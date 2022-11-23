@@ -41,7 +41,6 @@ const App = () => {
           <Route path='/login' element={!login ? <Login login={setlogin} sign={setsign } />: <Main/>} />
           <Route path='/basket' element={<Basket/> } />
         </Routes>
-        
      </Router>
      
     </div> 

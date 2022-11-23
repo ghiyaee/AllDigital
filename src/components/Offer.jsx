@@ -9,7 +9,7 @@ const Offer = () => {
   let [min_, setMin_] = useState(0);
   let [hr_, setHr_] = useState(10);
   let [active, setActive] = useState(false);
-
+  
   function dPluse() {
     if (mil_ === 0) {
       if (sec_ === 0) {

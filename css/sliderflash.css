@@ -1,0 +1,39 @@
+.wrrap {
+  position: relative;
+  max-width: 100%;
+  height: 350px;
+}
+
+.arrow-leftL {
+  position: absolute;
+  bottom: 50%;
+  left: 2%;
+  color: #f1c918;
+  cursor: pointer;
+  font-size: 3.5rem;
+  transform: translate(-50%, -50%);
+}
+
+.arrow-rightL {
+  position: absolute;
+  bottom: 50%;
+  right: -50px;
+  color: #f1c918;
+  cursor: pointer;
+  font-size: 3.5rem;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+  .wrrap {
+    height: 200px;
+  }
+  .arrow-leftL {
+    left: 20%;
+    bottom: -2%;
+  }
+  .arrow-rightL {
+    right: 20%;
+    bottom: -2%;
+  }
+}/*# sourceMappingURL=sliderflash.css.map */

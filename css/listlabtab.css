@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-labtab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+.container-labtab .wrrap-labtab {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 350px;
+  margin: 3rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-right: 3px solid rgb(249, 173, 173);
+}
+.container-labtab .labtab-img {
+  width: 200px;
+  height: 150px;
+}
+.container-labtab .labtab-img img {
+  width: 100%;
+}
+.container-labtab .labtab-titel {
+  height: 150px;
+}
+.container-labtab .labtab-titel p, .container-labtab button {
+  margin: 0.3rem;
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+.container-labtab .labtab-titel span {
+  color: tomato;
+}
+.container-labtab button {
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 7px;
+  background: #eee;
+}
+.container-labtab button:hover {
+  background: linear-gradient(10deg, blue, #f9f8f3 165%);
+  color: #f1c918;
+}/*# sourceMappingURL=listlabtab.css.map */

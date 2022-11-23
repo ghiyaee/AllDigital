@@ -1,0 +1,62 @@
+.login__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.login__sign {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px 0px rgb(55, 47, 47);
+  padding: 30px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.login__sing p, button, input {
+  padding: 10px;
+  margin: 15px;
+  border-radius: 3px;
+}
+
+.login__sign input {
+  outline: none;
+  border: none;
+  border-left: 9px solid tomato;
+  border-bottom: 3px solid tomato;
+  border-radius: 15px;
+}
+
+.login__sign button {
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.login__btn__sin {
+  background: tomato;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.login__btn__crt {
+  font-family: "Italianno";
+  font-size: 2.5rem;
+  background: tomato;
+  color: #eee;
+}
+
+.hiden {
+  display: none;
+}/*# sourceMappingURL=sign.css.map */

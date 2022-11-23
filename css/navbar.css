@@ -4,70 +4,85 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .navbar {
   width: 100%;
-  height: 100px;
-  background: #023e7d;
+  height: 70px;
+  background: #fff;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: space-around;
 }
-.navbar h1 {
+.navbar .logo {
+  flex: 1;
+  margin-left: 5rem;
+}
+.navbar .logo-nav {
+  text-decoration: none;
+}
+.navbar .logo-nav h1 {
   font-family: "Italianno", cursive;
-  color: #ffd100;
+  color: tomato;
+  cursor: pointer;
+  font-size: 2.5rem;
 }
-.navbar a {
-  color: rgb(253, 250, 250);
+.navbar .bknav {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.navbar .list-nav {
+  color: #000;
   text-decoration: none;
   font-size: 2.5rem;
   margin: 1rem;
-  padding: 3.2rem;
+  padding: 1rem 0.5rem;
   border-bottom: 3px solid transparent;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-family: "Italianno", cursive;
+  width: 110px;
+  height: 50px;
+  z-index: 0;
+  text-align: center;
 }
-.navbar a:hover {
-  color: #ffd100;
-  border-bottom: 5px solid rgb(252, 95, 95);
-}
-.navbar a:active {
-  background: rgba(173, 173, 172, 0.7);
-  border-bottom: 5px solid rgb(252, 95, 95);
-  -webkit-animation-name: animi;
-          animation-name: animi;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+.navbar .list-nav:hover {
+  box-shadow: 0 0 13px 0px blue;
+  -webkit-animation: anim 1s infinite alternate;
+          animation: anim 1s infinite alternate;
   border-radius: 10px;
 }
-@-webkit-keyframes animi {
-  from {
-    opacity: 1;
+@-webkit-keyframes anim {
+  0%, 20%, 25% {
+    box-shadow: 0 0 13px 0px green;
   }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes animi {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
+  50% {
+    box-shadow: 0 0 13px 0px tomato;
   }
 }
-.navbar .logo {
-  flex-grow: 1;
-  margin: 5rem;
-  font-size: 2.5rem;
-  color: rgb(253, 250, 250);
-  display: flex;
-  align-items: center;
-}
-.navbar .logo h1 {
-  margin: 1rem;
+@keyframes anim {
+  0%, 20%, 25% {
+    box-shadow: 0 0 13px 0px green;
+  }
+  50% {
+    box-shadow: 0 0 13px 0px tomato;
+  }
 }
 .navbar .btn-menu {
   display: flex;
-  color: rgb(253, 250, 250);
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+.navbar .btn-menu i {
+  margin-right: 4rem;
+  font-size: 2rem;
+  color: #000;
 }
 .navbar .closeMenu {
   display: none;
@@ -76,120 +91,19 @@
   display: block;
 }
 
-.sidebarLeft {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 190px;
-  height: 100vh;
-  padding: 3rem;
-  background: #023e7d;
-  transition: all 0.9s;
-  z-index: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.sidebarLeft h2 {
-  color: #ffd100;
-  font-family: "Italianno", cursive;
-}
-
-.Sidehiden {
-  transform: translateX(-1000px);
-}
-
-.SidehidenShow {
-  transform: translateX(0px);
-}
-
-.sidebarLeft ul {
-  list-style: none;
-  color: rgb(253, 250, 250);
-}
-
-.list {
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.ul li {
-  font-size: 2.5rem;
-  color: #ffd100;
-  cursor: pointer;
-}
-
-.actv {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-::-webkit-scrollbar {
-  width: 3px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #023e7d;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgb(250, 46, 46);
-}
-
-.sidebarLeft .list {
-  font-size: 2.5rem;
-  margin: 2rem auto;
-}
-
-@media (max-width: 1343px) {
-  .navbar {
-    height: 66px;
-  }
-  .logo h1 {
-    font-size: 2rem;
-    margin: 0.5rem;
-  }
-  .navbar a {
-    font-size: 2.5rem;
-    padding: 1.5rem;
-  }
-}
-@media (max-width: 1024px) {
-  .navbar {
-    height: 48px;
-  }
-  .logo h1 {
-    font-size: 2rem;
-    margin: 0.5rem;
-  }
-  .navbar a {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-}
-@media (max-width: 817px) {
-  .navbar {
-    height: 40px;
-  }
-  .navbar a {
-    font-size: 1.5rem;
-    padding: 0.7rem;
-  }
-}
 @media (max-width: 770px) {
+  .navbar {
+    height: 60px;
+  }
   .openMenu {
     display: block;
   }
-  .navbar a {
+  .list-nav {
     display: none;
   }
   .logo h1,
 i {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 }
 @media (min-width: 768px) {

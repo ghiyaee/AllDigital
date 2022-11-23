@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 2rem;
+}
+
+.container-offer {
+  width: 97vw;
+  margin: 7rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  flex-wrap: wrap;
+  background: rgb(44, 57, 171);
+  border-radius: 15px;
+}
+.container-offer .offer-text p {
+  font-size: 4rem;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 32px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 15px #0fa;
+  -webkit-animation: flicker 1.5s infinite alternate;
+          animation: flicker 1.5s infinite alternate;
+}
+@-webkit-keyframes flicker {
+  0%, 57%, 100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa, 0 0 10px #0fa, 0 0 10px #0fa, 0 0 10px #0fa;
+  }
+  0%, 100% {
+    text-shadow: none;
+  }
+}
+@keyframes flicker {
+  0%, 57%, 100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa, 0 0 10px #0fa, 0 0 10px #0fa, 0 0 10px #0fa;
+  }
+  0%, 100% {
+    text-shadow: none;
+  }
+}
+.container-offer .cradOffer {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(45deg, #f9f9f9, rgba(7, 7, 253, 0.1) 45%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem;
+  flex-wrap: wrap;
+  border-right: 3px solid #eee;
+  border-top: 3px solid #eee;
+}
+.container-offer .img-offer {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-offer .img-offer img {
+  width: 100%;
+}
+.container-offer .titel-Offer {
+  position: relative;
+}
+.container-offer .titeltext {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  align-items: center;
+}
+.container-offer .timeroffer {
+  text-align: center;
+  margin: 2rem auto;
+}
+.container-offer .timeroffer span {
+  margin: 0.6rem;
+  font-weight: bold;
+  color: yellow;
+  font-size: 3rem;
+}
+.container-offer .buying-offer {
+  cursor: pointer;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.container-offer .arrows {
+  font-weight: bold;
+  font-size: 3rem;
+  -webkit-animation: anima 1.3s linear 0.5s infinite alternate;
+          animation: anima 1.3s linear 0.5s infinite alternate;
+  color: tomato;
+}
+@-webkit-keyframes anima {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(25px);
+  }
+}
+@keyframes anima {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(25px);
+  }
+}
+
+@media (max-width: 600px) {
+  .cradOffer {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=offer.css.map */
