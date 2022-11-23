@@ -10,7 +10,12 @@ const Navbar = () => {
   const { state, dispatch } = useContext(Context);
   const { searchbar } = state;
   const [nav, setNav] = useState();
-
+ const scrollUp = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
   return (
     <>
       <div className="navbar">
@@ -18,12 +23,11 @@ const Navbar = () => {
           <Link
             className="logo-nav"
             to={"/"}
-            onClick={() => dispatch({ type: "SearchOff", payload: searchbar })}
-          >
+            onClick={() => dispatch({ type: "SearchOff", payload: searchbar })}>
             <h1>All Digital</h1>
           </Link>
         </div>
-        <div className="bknav">
+        <div className="bknav" onClick={scrollUp}>
           <Link
             className="list-nav mobi"
             to="/mobile"

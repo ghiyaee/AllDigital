@@ -10,10 +10,11 @@ html {
 
 .navbar {
   width: 100%;
-  height: 100px;
+  height: 70px;
   background: #fff;
   display: $dsFlex;
   align-items: center;
+  justify-content: space-around;
 
   .logo {
     flex: 1;
@@ -38,35 +39,31 @@ html {
     color: #000;
     text-decoration: none;
     font-size: $fontNavbar;
-    margin: 2rem;
-    padding: 1rem 0;
+    margin:1rem;
+    padding: 1rem .5rem;
     border-bottom: $boderbottom;
     transition: $trans;
     font-family: $font-logo;
      width:110px;
      height: 50px;
      z-index: 0;
+     text-align: center;
 
   }
-  .list-nav:hover::before{
-    content:" ";
-    width:inherit;
-    height:inherit;
-    border-radius: 5px;
-    background: tomato;
-    animation: anim 1.2s infinite alternate;
-    position: absolute;
-    top:25px;
-    z-index:-1;
+  .list-nav:hover{
+    box-shadow: 0 0 13px 0px blue;
+    animation: anim 1s infinite alternate;
+    border-radius: 10px;
+      
   }
 @keyframes anim{
    0%,
    20%,
   25%{
-     transform: translateX(-20px) ;
+     box-shadow: 0 0 13px 0px green;;
      }
     50%{
-     transform:  translateX(-20px) ;
+     box-shadow: 0 0 13px 0px tomato; ;
     }
    
 }
