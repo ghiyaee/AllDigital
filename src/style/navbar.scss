@@ -57,13 +57,17 @@ html {
       
   }
 @keyframes anim{
-   0%,
-   20%,
+   0%{
+    opacity: .3;
+   }
+   20%{
+    opacity: .5;
+     }
   25%{
-     box-shadow: 0 0 13px 0px green;;
+     opacity: .7;
      }
     50%{
-     box-shadow: 0 0 13px 0px tomato; ;
+     opacity: 1 ;
     }
    
 }
