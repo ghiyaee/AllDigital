@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 0rem;
   text-align: center;
   padding: 2rem;
   background: rgb(26, 100, 179);
@@ -17,14 +17,10 @@
     width: 300px;
     height: 400px;
     transition: all 0.5s;
-
-    border-radius: 12px;
+    border-radius: 2px;
     display: flex;
-
     align-items: center;
-
-    box-shadow: 0 0 10px 0px yellow;
-
+     border:2px solid rgba(212, 212, 209,.3);
     .img {
       width: 290px;
       height: 300px;
