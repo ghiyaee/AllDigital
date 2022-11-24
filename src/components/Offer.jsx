@@ -116,17 +116,22 @@ const Offer = () => {
   return (
     <div className="container-offer">
       {render}
-      <div className={`order ${order}`}>
-        <p>Add Order To Basket</p>
-        </div>
-        <div className={`order1 ${order1}`}>
-          <p>Add Order To Basket</p>
-        </div>
-        <div className={`order2 ${order2}`}>
-          <p>Add Order To Basket</p>
+      <div className="orderadd">
+        <div className={`order ${order}`}>
+          <p>Add Order</p>
         </div>
       </div>
-  
+      <div className="orderadd1">
+        <div className={`order1 ${order1}`}>
+          <p>Add Order</p>
+        </div>
+      </div>
+       <div className="orderadd2">
+        <div className={`order2 ${order2}`}>
+          <p>Add Order</p>
+        </div>
+      </div>
+      </div>
   );
 };
 
