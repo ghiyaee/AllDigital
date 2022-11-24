@@ -4,12 +4,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container_basket{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+  // align-items: center;
+}
 .coni{
   background: rgb(48, 2, 197);
   padding: 2rem;
+  height: 500px;
+    overflow-y: scroll;
+    width: 500px;
+    flex: 3;
 }
+
 .container-basket {
-  width: 40vw;
+  width:20vw;
   margin: 2rem auto;
   border-radius: 13px;
   background: $backgroundO;
@@ -25,8 +37,8 @@
 }
 
 .offer-img{
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 .offer-img img{
@@ -60,17 +72,29 @@
   font-size: 1.9rem;
   font-weight: bold;
 }
+.emptybasket{
+   padding: 2rem;
+  border-radius: 10px;
+  border: 3px solid #eee;
+  background: blue;
+  color:yellow;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+ 
+}
 .total {
   font-size: 3rem;
-  text-align: center;
+  // text-align: center;
   margin-right: 7rem;
-  width: 95vw;
   padding: 2rem;
   border-radius: 10px;
+  border: 3px solid #eee;
+  height: 150px;
 }
 
 .total div span{
- color:#fff;
+ color:rgb(20, 14, 14);
   font-size: 2.9rem;
   font-weight: bold;
 }

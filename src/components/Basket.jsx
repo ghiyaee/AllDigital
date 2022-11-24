@@ -39,47 +39,52 @@ const Basket = () => {
   const style={ backgroundImage: `url(${img}) ` }
   const render = filter.map((item) => {
     return (
-      <div className="container-basket" key={item.id} >
-        <div className="wrrap-basket">
-          <div className="basimg">
-            <div className="offer-img">
-              <img src={item.img} alt="imageProduct" />
+          <div className="container-basket" key={item.id} >
+            <div className="wrrap-basket">
+              <div className="basimg">
+                <div className="offer-img">
+                  <img src={item.img} alt="imageProduct" />
+                </div>
+              </div>
+              <div className="sumitem">
+                <div className="text">
+                  <p>{item.model}</p>
+                  <p>${item.price}</p>
+                </div>
+                <p> this item sum:$ {(subTotal = item.price * item.count)}</p>
+                <div className="counter">
+                  <span className="click" onClick={() => addHandel(item)}>
+                    +
+                  </span>
+                  <span>{item.count}</span>
+                  <span
+                    className={`click ${item.count > 1 ? "show" : "hiden"}`}
+                    onClick={() => (item.count === 1 ? "" : minHandel(item, 1))}
+                  >
+                    -
+                  </span>
+                  <span className={`${item.count > 1 ? "hiden" : "show"}`}>
+                    <i
+                      onClick={() => deleHandel(item)}
+                      className="fa-solid fa-trash-can trash "
+                    ></i>
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="sumitem">
-            <div className="text">
-              <p>{item.model}</p>
-              <p>${item.price}</p>
-            </div>
-            <p> this item sum:$ {(subTotal = item.price * item.count)}</p>
-            <div className="counter">
-              <span className="click" onClick={() => addHandel(item)}>
-                +
-              </span>
-              <span>{item.count}</span>
-              <span
-                className={`click ${item.count > 1 ? "show" : "hiden"}`}
-                onClick={() => (item.count === 1 ? "" : minHandel(item, 1))}
-              >
-                -
-              </span>
-              <span className={`${item.count > 1 ? "hiden" : "show"}`}>
-                <i
-                  onClick={() => deleHandel(item)}
-                  className="fa-solid fa-trash-can trash "
-                ></i>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+          </div >
+          
+       
     );
   });
 
   return (
     <>
-      <div className="coni">
-      {render}
+      <div className="container_basket">
+        {subTotal ?
+          <div className="coni">
+            {render}
+          </div> : <p className="emptybasket">Empty Basket </p>}
       <div className="total">
         <div>
           <span>total Products : $</span>
