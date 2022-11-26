@@ -5,7 +5,7 @@ import img from '../img/imgbas.jpg'
 import Footer from "./Footer";
 const Basket = () => {
   const { state, dispatch } = useContext(Context);
-   let { card } = state;
+   let { card, imgbasket } = state;
   let [countPluse, setCountPluse] = useState([]);
   const [total, setTOtal] = useState();
   const [filter, setFelter] = useState(card)
@@ -81,19 +81,23 @@ const Basket = () => {
   return (
     <>
       <div className="container_basket">
-        {subTotal ?
-          <div className="coni">
-            {render}
-          </div> : <p className="emptybasket">Empty Basket </p>}
-      <div className="total">
-        <div>
-          <span>total Products : $</span>
-          <span>{total}</span>
+        {subTotal ? (
+          <div className="coni">{render}</div>
+        ) : (
+          <div className="basketemtp">
+            <img src={imgbasket} alt="" />
+            <p className="emptybasket">Empty Basket </p>
+          </div>
+        )}
+        <div className="total">
+          <div>
+            <span>Total Products : $</span>
+            <span>{total}</span>
+          </div>
+          <button>Click Buying</button>
         </div>
-        <button>Click Buying</button>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

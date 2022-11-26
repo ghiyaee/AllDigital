@@ -19,12 +19,12 @@
   height: 500px;
     overflow-y: scroll;
    
-    // flex: 3;
+    flex: 3;
     
 }
 
 .container-basket {
-  width:20vw;
+  width:40vw;
   margin: 2rem auto;
   border-radius: 13px;
   background: $backgroundO;
@@ -41,8 +41,8 @@
 }
 
 .offer-img{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
 }
 .offer-img img{
@@ -76,15 +76,26 @@
   font-size: 1.9rem;
   font-weight: bold;
 }
+.basketemtp{
+  display: flex;
+    background: blue;
+    border-radius: 10px;
+    position: relative;
+  img{
+    width: 200px;
+    height: 200px;
+  }
+}
 .emptybasket{
    padding: 2rem;
   border-radius: 10px;
-  border: 3px solid #eee;
-  background: blue;
+  // border: 3px solid #eee;
+  background: transparent;
   color:yellow;
   font-size: 3rem;
   display: flex;
   align-items: center;
+  justify-content: center;
  
 }
 .total {

@@ -37,6 +37,8 @@ import img32_slider from "../img/tablet.png";
 import img33_slider from "../img/tablet1.png";
 import img34_slider from "../img/tablet2.png";
 import img35_slider from "../img/tablet3.png";
+import img36_slider from "../img/empty basket.png";
+
 import { type } from "@testing-library/user-event/dist/type";
 
 const Context = createContext();
@@ -53,6 +55,7 @@ const initail = {
   upper: "hidenUp",
   searchbar: "hidenbar",
   basket: 0,
+  imgbasket:img36_slider ,
   showCrad: false,
   card: [],
   soail: [
