@@ -27,14 +27,14 @@
   .arrow-left {
     color: $bkcolor;
     cursor: pointer;
-    font-size: $font;
+    // font-size: $font;
     padding: 0.5rem;
     display: none;
   }
   .arrow-right {
     color: $bkcolor;
     cursor: pointer;
-    font-size: $font;
+    // font-size: $font;
     padding: 0.5rem;
     display: none;
   }
@@ -93,9 +93,16 @@
     height: 300px;
     flex-direction: column;
   }
-  .arrow-right,.arrow-left{
-    display: block;
+   .arrow-right,.arrow-left{
+    display: block !important;
+  
   }
+  .arrowR,.arrowL {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: $backgroundb;
+  color: yellow;
+}
   .text h2 {
     font-size: 2.5rem;
   }
