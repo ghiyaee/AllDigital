@@ -58,19 +58,19 @@ const Offer = () => {
            setOrder((order = "show-order"));
            setInterval(() => {
              setOrder((order = "hiden-order"));
-           }, 2000);
+           }, 1300);
         } 
         if (item.id === 2) {
           setOrder1((order1 = "show-order"));
           setInterval(() => {
             setOrder1((order1 = "hiden-order"));
-          }, 2000);
+          }, 1300);
         } 
           if (item.id === 3) {
             setOrder2((order2 = "show-order"));
             setInterval(() => {
               setOrder2((order2 = "hiden-order"));
-            }, 2000);
+            }, 1300);
           } 
         }
        

@@ -10,14 +10,17 @@
   padding: 2rem;
   gap: 1rem;
   // align-items: center;
+  flex-wrap: wrap;
+ 
 }
 .coni{
   background: rgb(48, 2, 197);
   padding: 2rem;
   height: 500px;
     overflow-y: scroll;
-    width: 500px;
-    flex: 3;
+   
+    // flex: 3;
+    
 }
 
 .container-basket {
@@ -34,6 +37,7 @@
   align-items: center;
   padding: 2rem;
   flex-wrap: wrap;
+  
 }
 
 .offer-img{
@@ -85,12 +89,13 @@
 }
 .total {
   font-size: 3rem;
-  // text-align: center;
-  margin-right: 7rem;
   padding: 2rem;
   border-radius: 10px;
   border: 3px solid #eee;
   height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .total div span{
@@ -119,6 +124,9 @@
 }
 
 @media (max-width:768px){
+  .container_basket{
+     flex-direction: column;
+  }
   .counter{
     border: 3px solid tomato;
   }
