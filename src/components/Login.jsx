@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState,useRef,useEffect } from "react";
 const Login = ({ sign,login }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const input=useRef()
   const loginHandel = () => {
     const list = JSON.parse(localStorage.getItem("sign"));
     if (email === list[2].toLowerCase() && password === list[1].toLowerCase()) {
@@ -11,9 +12,12 @@ const Login = ({ sign,login }) => {
       login(true);
       sign(true)
     } else {
-      return;
+      return
     }
   };
+  useEffect(() => {
+    input.current.focus()
+  },[])
   return (
     <>
       <div className={`login__container `}>
@@ -28,9 +32,10 @@ const Login = ({ sign,login }) => {
               setEmail(e.target.value);
             }}
             value={email}
+            ref={input}
           />
           <input
-            type="text"
+            type="password"
             placeholder="PassWord "
             onChange={(e) => {
               setPassword(e.target.value);

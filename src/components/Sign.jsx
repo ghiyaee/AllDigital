@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState,useEffect,useRef } from "react";
 import {  Link } from "react-router-dom";
 import '../style/sign.scss'
 const Sign = ({si }) => {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
   const [email, setEmail] = useState("");
+  const input=useRef()
   const regester = () => {
     if (user === "" || pass === "" || email === "") {
       return;
@@ -16,6 +17,9 @@ const Sign = ({si }) => {
       si(true)
     }
   };
+  useEffect(() => {
+    input.current.focus()
+  },[])
   return (
     <>
       <div className={`login__container `}>
@@ -30,9 +34,10 @@ const Sign = ({si }) => {
               setUser(e.target.value);
             }}
             value={user}
+            ref={input}
           />
           <input
-            type="text"
+            type="password"
             placeholder="PassWord"
             onChange={(e) => {
               setPass(e.target.value);

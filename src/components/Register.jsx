@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext ,useRef,useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../context";
 import "../style/searchbar.scss";
@@ -20,6 +20,7 @@ const Register = ({ sign, login }) => {
     dispatch({ type: "SRCHD", payload: e.target.value.toLowerCase() });
     dispatch({ type: "SRCSD", payload: e.target.value.toLowerCase() });
   };
+  
   return (
     <>
       <div className="searchbar">
