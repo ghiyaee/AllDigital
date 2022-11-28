@@ -25,9 +25,6 @@ const Footer = () => {
    };
  }, [counter2]);
 
-
-
-
   return (
     <div className="container-footer">
       <div className="footer-info">
@@ -81,9 +78,6 @@ const Footer = () => {
         <div className="sildercho">
           <div className="silderSocail">
             {render()}
-            {/* <i className={soail[1]}></i>
-            <i className={soail[2]}></i>
-            <i className={soail[3]}></i> */}
           </div>
         </div>
       </div>

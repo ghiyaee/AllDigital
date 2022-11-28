@@ -76,14 +76,12 @@ const Slider = () => {
               className="arrow-left"
               onClick={() => dispatch({ type: "GoToPerv" })}
             >
-              {/* <i className="fa-solid fa-circle-left"></i> */}
               <div className="arrowL ">{`<`}</div>
             </div>
             <div
               className="arrow-right"
               onClick={() => dispatch({ type: "GoToNext" })}
-            >
-              {/* <i className="fa-solid fa-circle-right"></i> */}
+            > 
               <div className="arrowR">{`>`}</div>
             </div>
           </div>

@@ -1,49 +1,45 @@
-@import '../style/variable/variable.scss';
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "../style/variable/variable.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container-labtab{ 
-    width:100%;
-    display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-    gap: 2.5rem;
-    .wrrap-labtab{
+.container-labtab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  .wrrap-labtab {
     display: flex;
     flex-direction: column;
-     width: 250px;
+    width: 250px;
     height: 350px;
-     margin: 3rem;
-     transition: all .5s;
-     cursor: pointer;
+    margin: 3rem;
+    transition: all 0.5s;
+    cursor: pointer;
     border-right: 3px solid rgb(249, 173, 173);
-     
+  }
 
-   
- }
- 
-   .labtab-img {
-   width: 200px;
-    height:150px;
-  
- }
- .labtab-img img{
-  width: 100%;
- }
-
-  .labtab-titel{
+  .labtab-img {
+    width: 200px;
     height: 150px;
-  
- }
+  }
+  .labtab-img img {
+    width: 100%;
+  }
 
-   .labtab-titel p , button{
-    margin:0.3rem;
+  .labtab-titel {
+    height: 150px;
+  }
+
+  .labtab-titel p,
+  button {
+    margin: 0.3rem;
     font-weight: bold;
     font-size: 1.9rem;
   }
-  .labtab-titel span{
+  .labtab-titel span {
     color: tomato;
   }
   button {
@@ -52,7 +48,7 @@
     cursor: pointer;
     border-radius: 7px;
     background: #eee;
-   }
+  }
   button:hover {
     background: $backgroundb;
     color: $bkcolor;

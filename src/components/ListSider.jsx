@@ -15,7 +15,6 @@ const ListSlider = () => {
         </div>
         <div className="titel">
           <span>{item.product}</span>
-          {/* <span>price:${item.price}</span> */}
         </div>
        
       </div>

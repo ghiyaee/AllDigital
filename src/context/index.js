@@ -124,9 +124,6 @@ const initail = {
   ],
   imgfooter: [imgfooter1, imgfooter2, imgfooter3],
   productsMobile: [
-    // {
-    //     id: 1, model: 'appel 14 pro', ram: 256, price: 1500, img: img17_slider, count: 0
-    //     },
     {
       id: 2,
       model: "samsung ",
