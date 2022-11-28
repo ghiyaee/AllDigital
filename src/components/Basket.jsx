@@ -8,7 +8,7 @@ const Basket = () => {
    let { card, imgbasket } = state;
   let [countPluse, setCountPluse] = useState([]);
   const [total, setTOtal] = useState();
-  const [bas, setBas] = useState([
+  const [basketEmpty, setBasketEmpty] = useState([
     { transform: `translateX(-200px)` },
     { transform: `translateX(-100px)` },
   ]);
@@ -77,14 +77,12 @@ const Basket = () => {
               </div>
             </div>
           </div >
-          
-       
     );
   });
 
   setTimeout(() => {
-   setBas( { transform: `translateX(0px)` });
- },600)
+      setBasketEmpty({ transform: `translateX(0px)` });
+   },600)
  
   return (
     <>
@@ -93,12 +91,10 @@ const Basket = () => {
           <div className="coni">{render}</div>
         ) : (
           <div className="basketemtp">
-            <img
-              src={imgbasket}
-              alt=""
-              style={bas[0]}
-            />
-            <p className="emptybasket" style={bas[1]}>Empty Basket </p>
+            <img src={imgbasket} alt="" style={basketEmpty[0]} />
+            <p className="emptybasket" style={basketEmpty[1]}>
+              Empty Basket
+            </p>
           </div>
         )}
         <div className="total">
