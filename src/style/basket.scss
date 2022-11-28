@@ -80,21 +80,23 @@
     background: blue;
     border-radius: 10px;
     position: relative;
+    overflow: hidden;
   img{
     width: 200px;
     height: 200px;
+    transition: all .9s;
   }
 }
 .emptybasket{
    padding: 2rem;
   border-radius: 10px;
-  // border: 3px solid #eee;
   background: transparent;
   color:yellow;
   font-size: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .9s;
  
 }
 .total {
