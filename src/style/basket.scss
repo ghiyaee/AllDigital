@@ -11,12 +11,25 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
+.coni::-webkit-scrollbar {
+  width: .5em;
+  overflow: auto;
+  height: .5em;
+}
+.coni::-webkit-scrollbar-thumb{
+  border-radius: 15px;
+  background: yellow;
+}
+
 .coni {
   background: rgb(48, 2, 197);
   padding: 2rem;
   height: 500px;
   overflow-y: scroll;
   flex: 3;
+  border: 5px solid rgb(161, 159, 159);
+  border-radius: 15px;
+
 }
 
 .container-basket {
@@ -39,10 +52,11 @@
   width: 200px;
   height: 200px;
   object-fit: contain;
-}
-.offer-img img {
+  .img{
   width: 100%;
+  }
 }
+
 .sumitem {
   display: flex;
   flex-direction: column;
